@@ -1,7 +1,7 @@
 # Coding-Practice
 
 Sandpit to;
-* improve coding proficiency in a number of difference programming languages.
+* improve coding proficiency in a number of different programming languages.
 * improve technical competency in a number of related activities; testing, devsecops, ...
 
 ## Goals
