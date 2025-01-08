@@ -5,9 +5,14 @@ Sandpit to;
 * improve technical competency in a number of related activities; testing, devsecops, ...
 
 ## Goals
+
+Technical competency
 * Test Github things.
 * Integrate Github with other things.
 * Learning coding stuff.
+
+Architecture competency
+* Hands on use of technology to better problem solve and design things
 
 ## Status
 
