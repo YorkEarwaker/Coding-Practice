@@ -17,7 +17,7 @@ Architecture competency
 ## Status
 
 TODO
-* <todo: C++ Make project >
+* <todo: C++ Make project, required for several other repository projects >
 
 DONE
 * <done: intent to commit, return to coding proficiency and related competencies, >
