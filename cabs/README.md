@@ -7,6 +7,7 @@ Given the challenges faced by humanity circa 09 January 2025 .
 ## Status
 
 TODO
+* <todo: consider moving to Applications repository >
 * <todo: likely a multi-code base project>
 * <todo: start satire project module >
 * <todo: start concerns project module, as basis for use cases >
