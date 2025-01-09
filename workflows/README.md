@@ -5,10 +5,13 @@ GitHub recomended things to do based on current repository profile?
 ## Status
 
 TODO
-* <todo: move worlflow comments from parent directory readme here>
+* <todo: investigate GitHub workflows to better understand them and commitments on my part the part of the user>
 
 DONE
 * <done: first worlflow failure, >
+* <done: C++ Make project, required for several other repository projects, faulure >
+* <done: move worlflow comments from parent directory readme here>
+
 
 ## References
 
