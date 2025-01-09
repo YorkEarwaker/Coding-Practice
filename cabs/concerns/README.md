@@ -1,34 +1,32 @@
-# Citizens Architecting Better Society
+# Concerns
 
-Ontological state change management . 
+Stakeholder scenarios and concerns
 
-Given the challenges faced by humanity circa 09 January 2025 .
+For a given scenario stakeholders will have concerns. Ideas about things parties want to fix or find solution to. Next state and future state policy and planning. Collaborative action by heterogenious stakeholder groups.
+
+Stakeholder concerns
+* Project pupose and outcomes
+* Resource allocation
+* Communiation
+* Change management
+* Influence and power, some stakeholders are more influencial and powerful than others.
+* Ethical and social responosibility
+* Decision making
+
+Addrsssing Concerns
+* Identify and analyze stakeholders
+* Active listening 
+* Aknowledge and empathize
+* Transparent communication
+* Make change
+* Engage stakeholders
 
 ## Status
 
 TODO
-* <todo: consider moving to Applications repository >
-* <todo: likely a multi-code base project>
-* <todo: start satire project module >
-* <todo: start concerns project module, as basis for use cases >
-* <todo: start solutions project module, as basis for change >
-* <todo: refine project title >
-* <todo: consider moving to a stand alone repository >
-
-DONE
-* <done: intent to commit>
-
-## Desing Patterns
-
-Standard/Specification
-* ISO/IEC/IEEE 42010: Systems and software engineering — Architecture description [WS](http://www.iso-architecture.org/)
-* REA Ontology [WS](https://www.williamemccarthy.com/) William McCarthy
+* <todo: define deliverables>
+* <todo: refind concerns activity lists above, cite sources below, current source Brave search >
 
 ## References
 
-Terms
-* Citizen
-* Society
-
-News Pappers
-* ISO/IEC/IEEE 42010: Meta model, [WS](http://www.iso-architecture.org/42010/meta/)
+* Scenario planning methods
