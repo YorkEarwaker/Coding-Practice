@@ -17,7 +17,8 @@ Architecture competency
 ## Status
 
 TODO
-* <todo: C++ Make project, required for several other repository projects >
+* <todo: investigate GitHub workflows to better understand them and commitments on my part the part of the user>
 
 DONE
 * <done: intent to commit, return to coding proficiency and related competencies, >
+* <todo: C++ Make project, required for several other repository projects, faulure >
