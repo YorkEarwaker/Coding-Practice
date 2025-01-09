@@ -24,7 +24,8 @@ Addrsssing Concerns
 ## Status
 
 TODO
-* <todo: define deliverables>
+* <todo: define deliverables. candidate doc; boscard, scenario, . candidate deck; context diagrams? candidate model; concept?  >
+* <todo: define templates for deliverables. >
 * <todo: refind concerns activity lists above, cite sources below, current source Brave search >
 
 ## References
