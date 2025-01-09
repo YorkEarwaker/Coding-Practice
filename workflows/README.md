@@ -2,6 +2,14 @@
 
 GitHub recomended things to do based on current repository profile?
 
+## Status
+
+TODO
+* <todo: move worlflow comments from parent directory readme here>
+
+DONE
+* <done: first worlflow failure, >
+
 ## References
 
 News Papers
