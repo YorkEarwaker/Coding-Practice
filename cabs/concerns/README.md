@@ -13,7 +13,7 @@ Stakeholder concerns
 * Ethical and social responosibility
 * Decision making
 
-Addrsssing Concerns
+Addresssing Concerns
 * Identify and analyze stakeholders
 * Active listening 
 * Aknowledge and empathize
