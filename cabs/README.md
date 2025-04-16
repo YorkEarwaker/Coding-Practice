@@ -32,5 +32,10 @@ Terms
 * Citizen
 * Society
 
+Learning
+* Justice, Michael J Sandel, Harvard University, [WS](https://sandel.scholars.harvard.edu/justice)
+
+
+
 News Pappers
 * ISO/IEC/IEEE 42010: Meta model, [WS](http://www.iso-architecture.org/42010/meta/)
