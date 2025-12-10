@@ -20,4 +20,11 @@ Languages primary
 Languages secondary
 * Web, html, js, css, ...
 * W3C, xml, rds, owl, ...
+* Golang, as this appear in 'Ubuntu for Developers'
+* .Net, as this appear in 'Ubuntu for Developers'
+
+
+## References
+
+* Ubuntu for Developers, com [WS](https://documentation.ubuntu.com/ubuntu-for-developers/), docs, Ubuntu
 
