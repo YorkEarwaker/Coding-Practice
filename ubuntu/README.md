@@ -14,15 +14,16 @@ Targets
 * Raspberry Pi
 
 Languages primary
-* C/C++
+* C/C++, ASM
 * Java
 * JS/TS
-* Python, micorpython
+* Python, MicorPython
 * Rust
 
 Languages secondary
 * Web, html, js, css, ...
 * W3C, xml, rds, owl, ...
+* R, mathematics
 * Golang, as this appear in 'Ubuntu for Developers'
 * .Net, as this appear in 'Ubuntu for Developers'
 
@@ -30,4 +31,5 @@ Languages secondary
 ## References
 
 * Ubuntu for Developers, com [WS](https://documentation.ubuntu.com/ubuntu-for-developers/), docs, Ubuntu
+* Ubuntu tutorials, com [WS](https://documentation.ubuntu.com/ubuntu-for-developers/tutorials/), docs, Ubuntu
 
