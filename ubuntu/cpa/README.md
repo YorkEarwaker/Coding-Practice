@@ -11,12 +11,13 @@ Targets
 * An other architecture, 
 
 ## TODO
-* <todo; consider, Work in progress wip setup of C/C++ toolchains for development on Ubuntu LTS 24.04.3 linux . >
-* <todo; consider, hello world, C and C++ example, >
+* <todo; complete Ubuntu developer gcc tutorial, >
 
 ## DONE
 * <done; intent to commit, >
 * <done; consider, include link to Ubuntu tuturoal for GCC install in references, >
+* <todo; consider, hello world, C and C++ example, compiled classes to machine code, executed in terminal window. >
+* <todo; consider, Work in progress wip setup of C/C++ toolchains for development on Ubuntu LTS 24.04.3 linux . completed install and tested first iteration, >
 
 ## Issues
 
@@ -167,7 +168,8 @@ Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
 ## References
 
 Ubuntu gcc g++
-* Checking If GCC Compiler Is Installed On My Linux System, [WS](https://www.osetc.com/en/checking-if-gcc-compiler-is-installed-on-my-linux-system.html), 
+* Checking If GCC Compiler Is Installed On My Linux System, [WS](https://www.osetc.com/en/checking-if-gcc-compiler-is-installed-on-my-linux-system.html), osetc, 
 
-
+Ubuntu development
+* Develop with GCC on Ubuntu, [WS](https://documentation.ubuntu.com/ubuntu-for-developers/tutorials/gcc-use/), Ubuntu, documentation, 
 
