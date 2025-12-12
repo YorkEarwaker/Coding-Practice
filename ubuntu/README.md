@@ -2,7 +2,10 @@
 
 Setting up some basic vanilla code tool chains in Ubuntu. Testing out of the box Ubuntu code capability.
 
-Attempting here to do so without recourse. For IDE's build cicd or other development environment setup see the automation repo.
+Attempting here to do so with minimum requirement. 
+
+See also. For IDE's build cicd or other development operations security (DevSecOps) environment setup see the automation repo.
+* Automation, [GH](https://github.com/YorkEarwaker/Automation)
 
 ## Notes
 
