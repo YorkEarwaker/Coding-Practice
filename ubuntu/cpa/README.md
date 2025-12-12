@@ -1,22 +1,28 @@
 # C Cpp ASM cpa 
 
-
+C and C++ coding environment 
 
 ## Notes
 
-Work in progress wip setup of C/C++ toolchains for development on Ubuntu LTS 24.04.3 linux .
+Targets
+* Ubuntu, Intel
+* Raspberry Pi SBC, ARM R?
+* Raspberry Pi MCU, ARM M?
+* An other architecture, 
 
 ## TODO
-* <todo; consider, include link to Ubuntu tuturoal for GCC install in references, >
+* <todo; consider, Work in progress wip setup of C/C++ toolchains for development on Ubuntu LTS 24.04.3 linux . >
+* <todo; consider, hello world, C and C++ example, >
 
 ## DONE
 * <done; intent to commit, >
+* <done; consider, include link to Ubuntu tuturoal for GCC install in references, >
 
 ## Issues
 
 ### Issue 1
 Could not find gcc or g++ or make installed on Ubuntu LTS 24.04.3 . Had mistakenly assumed they were installed by default.
-* Resolved. The Ubuntu Desktop default install 'does not include basic develop tooling' [WS](https://documentation.ubuntu.com/ubuntu-for-developers/explanation/install-ubuntu/#developer-tooling)
+* Resolved. The Ubuntu Desktop default install 'does not include basic development tooling' [WS](https://documentation.ubuntu.com/ubuntu-for-developers/explanation/install-ubuntu/#developer-tooling)
 
 ```
 $ g++ --version

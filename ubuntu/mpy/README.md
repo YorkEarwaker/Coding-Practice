@@ -18,6 +18,10 @@ Targets
 ## DONE
 * <todo; consider, intent to commit, >
 
+## Installed
+Prerequisites likely CPython Python three. Likely in isolated Python virtual environments venv .
+
+Not yet installed.
 
 ## References
 
