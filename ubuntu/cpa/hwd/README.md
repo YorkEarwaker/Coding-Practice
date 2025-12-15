@@ -14,8 +14,11 @@ First c and cpp hello world files on Ubuntu linux.
 ## Output
 Success! Use of GCC and G++ to compile hello world classes to machine code executable. 
 
+Basic process and code described in, Develop with GCC on Ubuntu, [WS](https://documentation.ubuntu.com/ubuntu-for-developers/tutorials/gcc-use/)
+
 ### Compiling, 
-Source code to machine code
+Source code to machine code. Success.
+
 ```
 $ dir
 hwd.c  hwd.cpp	lue.c  README.md
@@ -104,3 +107,40 @@ The answer to life the universe and everything is 42.
 ```
 
 ### make
+Build system with make and Makefile script. Success.
+
+```
+$ make
+gcc -c hwd.c -o hwd.o
+gcc -o hola_mundo hwd.o
+
+$ dir
+hola_mundo  hwdc     hwdcpp  lue    lue_num_bug  README.md
+hwd.c	    hwd.cpp  hwd.o   lue.c  Makefile
+
+$ ls -l
+total 104
+-rwxrwxr-x 1 york-earwaker york-earwaker 15960 Dec 15 11:59 hola_mundo
+-rw-rw-r-- 1 york-earwaker york-earwaker    76 Dec 12 15:48 hwd.c
+-rwxrwxr-x 1 york-earwaker york-earwaker 15960 Dec 12 15:48 hwdc
+-rw-rw-r-- 1 york-earwaker york-earwaker    76 Dec 12 15:49 hwd.cpp
+-rwxrwxr-x 1 york-earwaker york-earwaker 15960 Dec 12 15:49 hwdcpp
+-rw-rw-r-- 1 york-earwaker york-earwaker  1496 Dec 15 11:59 hwd.o
+-rwxrwxr-x 1 york-earwaker york-earwaker 15960 Dec 12 17:20 lue
+-rw-rw-r-- 1 york-earwaker york-earwaker   174 Dec 12 17:20 lue.c
+-rwxrwxr-x 1 york-earwaker york-earwaker 15960 Dec 12 17:19 lue_num_bug
+-rw-rw-r-- 1 york-earwaker york-earwaker   350 Dec 15 11:58 Makefile
+-rw-rw-r-- 1 york-earwaker york-earwaker  3104 Dec 12 17:25 README.md
+
+$ ./hola_mundo
+Hello Ubuntu.
+```
+
+
+## References
+
+make
+* 4.2 Rule Syntax, org [WS](https://www.gnu.org/software/make/manual/html_node/Rule-Syntax.html), make manual, GNU, 
+* 10.5.3 Automatic Variables, org [WS](https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html)
+
+
