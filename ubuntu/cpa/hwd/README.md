@@ -136,6 +136,57 @@ $ ./hola_mundo
 Hello Ubuntu.
 ```
 
+### Debugging, GDB
+Using the -g option to produce debugging information for GDB .
+
+```
+$ gcc -g lue.c -o lue_debug
+
+$ gdb lue_debug
+GNU gdb (Ubuntu 15.0.50.20240403-0ubuntu1) 15.0.50.20240403-git
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from lue_debug...
+(gdb) start
+Temporary breakpoint 1 at 0x1155: file lue.c, line 4.
+Starting program: /home/york-earwaker/Documents/dev/repo/coding-practice/ubuntu/cpa/hwd/lue_debug 
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Enable debuginfod for this session? (y or [n]) n
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 1, main () at lue.c:4
+4	    int number = 42;
+(gdb) print number
+$1 = 32767
+(gdb) next
+5	    printf("Hello, Arthur P. Dent!\nThe answer to life the universe and everything is %d. \n", number);
+(gdb) print number
+$2 = 42
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 67123] will be killed.
+
+Quit anyway? (y or n) y
+```
+
 
 ## References
 
