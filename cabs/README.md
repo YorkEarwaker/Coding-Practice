@@ -18,7 +18,7 @@ TODO
 DONE
 * <done: intent to commit>
 
-## Desing Patterns
+## Design Patterns
 
 Standard/Specification
 * ISO/IEC/IEEE 42010: Systems and software engineering — Architecture description [WS](http://www.iso-architecture.org/)
@@ -32,10 +32,12 @@ Terms
 * Citizen
 * Society
 
+Papers
+* Brahmin Left vs Merchant Right: Rising Inequality and the Changing Structure of Political Conflict, [WS](http://piketty.pse.ens.fr/fr/conflict), Thomas Piketty, 
+
 Learning
 * Justice, Michael J Sandel, Harvard University, [WS](https://sandel.scholars.harvard.edu/justice)
 
-
-
 News Pappers
 * ISO/IEC/IEEE 42010: Meta model, [WS](http://www.iso-architecture.org/42010/meta/)
+
