@@ -27,7 +27,11 @@ DONE
 
 ## References
 
-C books/references
+Books
+* The C Programming Language, [WP](https://en.wikipedia.org/wiki/The_C_Programming_Language), Kerrnighan & Ritchie, ANSI C original reference <todo: consider, is this still worth buying as a dead tree? The language has moved on. >
+* The C++ Programming Language, [WP](https://en.wikipedia.org/wiki/The_C%2B%2B_Programming_Language), Bjarne Stroustrup, standard reference
+
+C books/references, comparisons, lists, 
 * The Definitive C Book Guide and List, [WS](https://stackoverflow.com/questions/562303/the-definitive-c-book-guide-and-list), 15 Jan 2019 (edited), StackOverflow
 * The Definitive C++ Book Guide and List, [WS](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list), 18 Jan 2021 (edited), StackOverflow
 * 8 C Books That Separate Experts from Amateurs, [WS](https://bookauthority.org/books/best-c-books), 28 June 2025 (updated), BookAuthority 
