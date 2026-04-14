@@ -1,5 +1,7 @@
 # Rust rst
 
+Alternative to C/Cpp . 
+
 ## Notes
 
 Targets
@@ -21,3 +23,8 @@ Targets
 How to set up a development environment for Rust on Ubuntu, [WS](https://documentation.ubuntu.com/ubuntu-for-developers/howto/rust-setup/)
 
 Not yet installed.
+
+## References
+
+Rust books/references
+* Learn Rust, [WS](https://rust-lang.org/learn/), Rust, official resources for learning Rust language, 
