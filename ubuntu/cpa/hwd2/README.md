@@ -19,3 +19,7 @@ $ cmake -DCMAKE_CXX_COMPILER=clang++ -B build
 $ ./build/hwd.o
 
 
+## References
+
+* Develop C and C++ with Clang on Ubuntu [WS](https://documentation.ubuntu.com/ubuntu-for-developers/tutorials/clang-use/), Ubuntu, docs, 
+
