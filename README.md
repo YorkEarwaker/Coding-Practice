@@ -27,9 +27,28 @@ DONE
 
 ## References
 
+Programming Languages
+* Assembly 
+* C [WP](https://en.wikipedia.org/wiki/The_C_Programming_Language)
+* C++ 
+* Java
+* JavaScript
+* TypeScript
+* Python
+* MicroPython
+* Rust
+
 Books
 * The C Programming Language, [WP](https://en.wikipedia.org/wiki/The_C_Programming_Language), Kerrnighan & Ritchie, ANSI C original reference <todo: consider, is this still worth buying as a dead tree? The language has moved on. >
 * The C++ Programming Language, [WP](https://en.wikipedia.org/wiki/The_C%2B%2B_Programming_Language), Bjarne Stroustrup, standard reference
+
+Learning
+* Learn cpp [WS](https://www.learncpp.com/), course
+* Learn C in Y minutes [WS](https://learnxinyminutes.com/c/), cheat sheet
+* Learn C++ in Y minutes [WS](https://learnxinyminutes.com/c++/), cheat sheet
+* Learn MIPS Assembly in Y minutes [WS](https://learnxinyminutes.com/mips/), cheat sheet
+* Learn C, [WS](https://www.w3schools.com/c/index.php) w3schools 
+* Learn C++, [WS](https://www.w3schools.com/cpp/default.asp), w3schools
 
 C books/references, comparisons, lists, 
 * The Definitive C Book Guide and List, [WS](https://stackoverflow.com/questions/562303/the-definitive-c-book-guide-and-list), 15 Jan 2019 (edited), StackOverflow
