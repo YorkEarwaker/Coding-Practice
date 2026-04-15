@@ -7,17 +7,31 @@ Clang usage on ubuntu.
 ### Use clang to compile
 compile with clang from the cli
 
+using C++ compiler wrapper
+```
 $ clang++ -o hwd src/hwd.cpp
 
 $ ./hwd
+```
+
+or, using the clang driver itself and explicitly declaring the c++ language and the c++ standard library
+```
+$ clang -x c++ -lstdc++ -o hwd src/hwd.cpp
+
+$ ./hwd
+```
 
 ### Use cmake to build
 build with cmake from the cli using clang to compile, see CMakeLists.txt for build instructions
 
+In this example .o extension was added to the binary file, this is decorative (aesthetics) and informative,
+```
 $ cmake -DCMAKE_CXX_COMPILER=clang++ -B build
 
-$ ./build/hwd.o
+$ cmake --build build
 
+$ ./build/hwd.o
+```
 
 ## References
 
