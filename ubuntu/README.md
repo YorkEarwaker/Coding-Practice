@@ -23,9 +23,11 @@ Languages primary
 * rst - Rust
 
 Languages secondary
-* Web, html, js, css, ...
-* W3C, xml, rds, owl, ...
+* html, js, css, ..., W3C web, client side
+* xml, rds, owl, ..., W3C ontology, server side
 * R, mathematics
+
+tbd - find use case for these, if and when necessary for AGW project
 * Golang, as this appear in 'Ubuntu for Developers'
 * .Net, as this appear in 'Ubuntu for Developers'
 
