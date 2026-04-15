@@ -12,6 +12,7 @@ Targets
 
 ## TODO
 * <todo; complete Ubuntu developer clang tutorial, >
+* <todo; consider identify a standards specification for object code file extension naming postfix, >
 
 ## DONE
 * <done; intent to commit, >
