@@ -3,7 +3,7 @@
 C and C++ coding environment 
 
 See also
-* Build, [GH](https://github.com/YorkEarwaker/Automation/tree/main/build), cmake and other build tools
+* Build, automation, [GH](https://github.com/YorkEarwaker/Automation/tree/main/build), cmake and other build tools
 
 ## Notes
 
