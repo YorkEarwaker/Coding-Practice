@@ -4,12 +4,13 @@ Sandpit to;
 * improve coding proficiency in a number of different programming languages.
 * improve technical competency in a number of related activities; testing, devsecops, ...
 
-## Goals
+## Notes
+Goals and objectives aligned to the Athropogenic Global Warming AGW project
 
 Technical competency
-* Test Github things.
-* Integrate Github with other things.
-* Learning coding stuff.
+* Programming languages and toolchains 
+* Repository, evaluate GitHub, learn Github practical everyday use things, integrate Github with other things like git, 
+* Learning coding stuff, primarily tailored to AGW project, secondarily other things, 
 
 Architecture competency
 * Hands on use of technology to better problem solve and design things
