@@ -23,8 +23,8 @@ Languages primary
 * rst - Rust
 
 Languages secondary
-* html, js, css, ..., W3C web, client side
-* xml, rds, owl, ..., W3C ontology, server side
+* html, js, css, ..., W3C, hyperlinked content, client side, user interface, 
+* xml, rds, owl, ..., W3C, ontology, server side, linked data, 
 * R, mathematics
 
 tbd - find use case for these, if and when necessary for AGW project
