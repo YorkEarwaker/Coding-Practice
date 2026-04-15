@@ -17,9 +17,9 @@ Targets
 Languages primary
 * cpa - C/C++, ASM
 * jva - Java 
-* jts - JS/TS
+* jts - JavaScript JS and TypeScript TS
 * cpy - Python, 
-* mpy - MicorPython
+* mpy - MicroPython
 * rst - Rust
 
 Languages secondary
