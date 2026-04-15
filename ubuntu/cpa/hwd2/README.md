@@ -24,7 +24,7 @@ $ ./hwd
 ### Use cmake to build
 build with cmake from the cli using clang to compile, see CMakeLists.txt for build instructions
 
-In this example .o extension was added to the binary file, this is decorative (aesthetics) and informative,
+In this example .o extension was added to the binary file, this is decorative (aesthetics) and informative, indicating it is a binary .o object. 
 ```
 $ cmake -DCMAKE_CXX_COMPILER=clang++ -B build
 
