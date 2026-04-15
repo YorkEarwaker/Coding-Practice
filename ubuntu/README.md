@@ -8,17 +8,19 @@ See also. For IDE's build cicd or other development operations security (DevSecO
 * Automation, [GH](https://github.com/YorkEarwaker/Automation)
 
 ## Notes
+In relation Anthopogenic Global Warming AGW project
 
 Targets
 * Ubuntu
 * Raspberry Pi
 
 Languages primary
-* C/C++, ASM
-* Java
-* JS/TS
-* Python, MicorPython
-* Rust
+* cpa - C/C++, ASM
+* jva - Java 
+* jts - JS/TS
+* cpy - Python, 
+* mpy - MicorPython
+* rst - Rust
 
 Languages secondary
 * Web, html, js, css, ...
