@@ -14,7 +14,7 @@ Targets
 * An other architecture, 
 
 ## TODO
-* <todo; consider identify a standards specification for object code file extension naming postfix, >
+* <todo; consider identify a standards specification for object code file extension naming postfix, bad form in unix C/C++ coding practice? >
 * <todo; consider, install ninja build system, for use with CMake, pro's and con's >
 
 ## DONE
@@ -23,7 +23,7 @@ Targets
 * <done; consider, hello world, C and C++ example, compiled classes to machine code, executed in terminal window. >
 * <done; consider, Work in progress wip setup of C/C++ toolchains for development on Ubuntu LTS 24.04.3 linux . completed install and tested first iteration, wip>
 * <done; complete Ubuntu developer gcc tutorial, >
-* <done; complete Ubuntu developer clang tutorial, >
+* <done; complete Ubuntu developer clang tutorial, with 'hello world' src code for both C and C++ >
 
 ## Issues
 
