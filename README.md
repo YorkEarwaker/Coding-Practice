@@ -40,7 +40,7 @@ Programming Languages
 * Rust
 
 Books
-* The C Programming Language, [WP](https://en.wikipedia.org/wiki/The_C_Programming_Language), Kerrnighan & Ritchie, ANSI C original reference <todo: consider, is this still worth buying as a dead tree? The language has moved on. >
+* The C Programming Language, [WP](https://en.wikipedia.org/wiki/The_C_Programming_Language), Kernighan & Ritchie, ANSI C original reference <todo: consider, is this still worth buying as a dead tree? The language has moved on since K&R ANSI C to multiple revisions in ISO standards. >
 * The C++ Programming Language, [WP](https://en.wikipedia.org/wiki/The_C%2B%2B_Programming_Language), Bjarne Stroustrup, standard reference
 
 Learning
