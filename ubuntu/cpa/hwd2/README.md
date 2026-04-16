@@ -7,7 +7,7 @@ Clang usage on ubuntu.
 ### Use clang to compile
 compile with clang from the cli
 
-using C++ compiler wrapper
+compile C++ code using clang C++ compiler wrapper
 ```
 $ clang++ -o hwd src/hwd.cpp
 
@@ -19,6 +19,27 @@ or, using the clang driver itself and explicitly declaring the c++ language and 
 $ clang -x c++ -lstdc++ -o hwd src/hwd.cpp
 
 $ ./hwd
+```
+
+compile C code using the clang C - driver?
+* <info: hello world programme as per Kerrnigham & Ritchie - The C Programming Language 2nd Ed, >
+* <todo: consider, confirm driver used in this instance>
+```
+2$ clang -o hwd src/hwd-kr.c
+src/hwd-kr.c:5:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    5 | main () 
+      | ^
+      | int
+1 error generated.
+```
+
+compile C code using the clang C - driver?
+* <info: int added to the, hello world programme as per Kerrnigham & Ritchie - The C Programming Language 2nd Ed, >
+```
+$ clang -o hwd src/hwd.c
+
+$ ./hwd
+hello, world
 ```
 
 ### Use cmake to build
