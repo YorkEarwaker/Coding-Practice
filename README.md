@@ -29,15 +29,15 @@ DONE
 ## References
 
 Programming Languages
-* Assembly 
-* C [WP](https://en.wikipedia.org/wiki/The_C_Programming_Language)
-* C++ 
-* Java
-* JavaScript
+* Assembly - likely rarely
+* C [WP](https://en.wikipedia.org/wiki/C_(programming_language))
+* C++ [WP](https://en.wikipedia.org/wiki/C%2B%2B)
+* Java [WP](https://en.wikipedia.org/wiki/Java_(programming_language))
+* JavaScript 
 * TypeScript
-* Python
+* Python 
 * MicroPython
-* Rust
+* Rust [WP](https://en.wikipedia.org/wiki/Rust_(programming_language))
 
 Books
 * The C Programming Language, [WP](https://en.wikipedia.org/wiki/The_C_Programming_Language), Kernighan & Ritchie, ANSI C original reference <todo: consider, is this still worth buying as a dead tree? The language has moved on since K&R ANSI C to multiple revisions in ISO standards. >
