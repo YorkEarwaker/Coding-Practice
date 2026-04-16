@@ -22,7 +22,7 @@ $ ./hwd
 ```
 
 compile C code using the clang C - driver?
-* <info: hello world programme as per Kerrnigham & Ritchie - The C Programming Language 2nd Ed, >
+* <info: hello world programme as per Kernighan & Ritchie, The C Programming Language, 2nd Ed, >
 * <todo: consider, confirm driver used in this instance>
 ```
 2$ clang -o hwd src/hwd-kr.c
@@ -34,7 +34,7 @@ src/hwd-kr.c:5:1: error: type specifier missing, defaults to 'int'; ISO C99 and 
 ```
 
 compile C code using the clang C - driver?
-* <info: int added to the, hello world programme as per Kerrnigham & Ritchie - The C Programming Language 2nd Ed, >
+* <info: int added to the, hello world programme as per Kernighan & Ritchie, The C Programming Language, 2nd Ed, >
 ```
 $ clang -o hwd src/hwd.c
 
