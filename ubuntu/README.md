@@ -8,7 +8,7 @@ See also. For IDE's build cicd or other development operations security (DevSecO
 * Automation, [GH](https://github.com/YorkEarwaker/Automation)
 
 ## Notes
-In relation to Anthopogenic Global Warming AGW project
+In relation to coding for the Anthopogenic Global Warming AGW project
 
 Targets
 * Ubuntu
@@ -44,6 +44,6 @@ tbd - find use case for these, if and when necessary for AWG project
 * Ubuntu for Developers, com [WS](https://documentation.ubuntu.com/ubuntu-for-developers/), docs, Ubuntu
 * Ubuntu tutorials, com [WS](https://documentation.ubuntu.com/ubuntu-for-developers/tutorials/), docs, Ubuntu
 
-Systems modeling - digital twin? <todo: consider, where better to put this?>
-* RDS, ISO/IEC 81346, [WS](https://www.81346.com/), structuring and identifying industrial systems and equipment. <todo; evalute RDS 81346 for AGW project, >
+Systems engineering modeling - systems engineering, digital twin of sorts, <todo: consider, where better to put this? lifecycle management, >
+* RDS, ISO/IEC 81346, Reference Designation System for Industrial Systems, [WS](https://www.81346.com/), common engineering language, structuring and identifying industrial systems and equipment, tags for part relations, rds ontology in (W3C rdf, owl), component naming, part identification, equipment tagging, asset designation, to describe and organize any object in a system <todo; evalute RDS 81346 for AGW project, not at this time, future consideration, >
 
