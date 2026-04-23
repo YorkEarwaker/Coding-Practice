@@ -80,8 +80,14 @@ Style Guides - C++
 * Cpp Core Guidelines, [GH](https://github.com/isocpp/CppCoreGuidelines), cpp org [WS](https://isocpp.org/blog/2015/09/bjarne-stroustrup-announces-cpp-core-guidelines) Bjarne Stroustrup
 * GNU Octave C++ Style Guide, [WS](https://wiki.octave.org/C%2B%2B_style_guide), Octave, GNU
 * Google C++ Style Guide, [WS](https://google.github.io/styleguide/cppguide.html), Google
+* CppCodingStandards, [WS](https://wiki.openstack.org/wiki/CppCodingStandards), OpenStack
+* Programming in C++, Rules and Recommendations, [WS](https://www.doc.ic.ac.uk/lab/cplus/c++.rules/), Imperial
+* other to list, 
 
 Project structure - C++
 * Canonical Project Structure, [WS](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1204r0.html), 2018, paper
 * Source File Organization for C++ Projects Part 1: Headers and Sources, [WS](https://arne-mertz.de/2016/06/organizing-headers-and-sources/), 22 June 2016, Simplify C++
 * Source File Organization for C++ Projects Part 2: Directories and Namespaces, [WS](https://arne-mertz.de/2016/06/organizing-directories-namespaces/), 29 June 2016, Simplify C++
+
+News Papers
+* C++ File Extensions: .cc vs .cpp – Key Differences, Best Practices & Modern Usage for Linux Systems, [WS](https://www.w3tutorials.net/blog/c-code-file-extension-what-is-the-difference-between-cc-and-cpp/), 16 January 2026, W3Tutrorials
