@@ -3,6 +3,7 @@
 Sandpit to;
 * improve coding proficiency in a number of different programming languages.
 * improve technical competency in a number of related activities; testing, devsecops, ...
+* improve standards compliance
 
 ## Notes
 Goals and objectives aligned to the Athropogenic Global Warming AGW project
