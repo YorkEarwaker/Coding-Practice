@@ -46,6 +46,7 @@ Style Guides, coding standards - dogma, as it varies between languages and frame
 AWG project convention - <todo: consider, place elsewhere >
 * first cut of trying to identify an overall style guide coding and naming conventions for the AWG project .
 * bicycle shedding, needs to be done but gets in the way of doing anything productive to have to worry about these sorts of conventions, 
+* required to short circuit coding wars dogmatism which impacts productivity and consistency and other non functionals
 
 | Language | Primary Source Extension | Common File Naming Style | Header/Interface Extension |
 | :--- | :--- | :--- | :--- |
