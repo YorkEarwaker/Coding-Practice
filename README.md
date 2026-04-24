@@ -67,6 +67,7 @@ AGW project convention - <todo: consider, place elsewhere >
 * <todo: consider, keep Key Rule column, point to standard if there is one, ?>
 
 Following, various resources for learning programming languages listed above. Not recommendations, not necessarily all good practice, an attempt at finding a better understanding. 
+* <todo: consider, decide on which ones are relevant to AGW project, and prune accordingly >
 
 ### asm
 
