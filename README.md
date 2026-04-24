@@ -40,7 +40,7 @@ Programming Languages
 * Rust [WP](https://en.wikipedia.org/wiki/Rust_(programming_language))
 
 Style Guides, coding standards - dogma, as it varies between languages and frameworks and organizations, it would be nice to have some common standards based on human centered concerns evidence and non functional requirements like readability modifiability maintainability extensibility testability and so on, this would help with automatability which is a machine based concern
-* Coding convention, [WP]((https://en.wikipedia.org/wiki/Coding_conventions)
+* Coding convention, [WP](https://en.wikipedia.org/wiki/Coding_conventions)
 * Naming convention, [WP](https://en.wikipedia.org/wiki/Naming_convention_(programming))
 
 AWG project convention - <todo: consider, place elsewhere >
