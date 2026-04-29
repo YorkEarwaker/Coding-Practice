@@ -1,6 +1,6 @@
 # Bjarne Stroustrup bst
 
-Some example code from The C++ Programming Language
+Some example code from The C++ Programming Language book by Bjarne Stroustrup the creator of C++ .
 
 ## Status
 TODO
@@ -13,6 +13,6 @@ DONE
 ## References
 
 Books
-* The C++ Programming Language 3rd Edition 2000
+* The C++ Programming Language 3rd Edition 2000, Bjarne Stroustrup, 
 
 
