@@ -16,9 +16,10 @@ Targets
 ## TODO
 * <todo; consider, identify a standards specification for object code file extension naming postfix, bad form in unix C/C++ coding practice? >
 * <todo; consider, install ninja build system, for use with CMake, pro's and con's >
-* <todo; consider, style guide (cpp coding standards), PascalCase for types and classes and camelCase for variables and functions? good standard to adopt? >
+* <todo; consider, style guide (cpp coding standards), PascalCase for types and classes and camelCase for variables and functions? good standard to adopt? wip>
 * <todo; consider, style guide (cpp coding standards), all c++ source file to use .cpp? extension, all header files to use .hpp? extension, > 
 * <todo; consider, check that C/C++ cross comparability requires .h extension for c++ headers, presume there is some work arround to be found, >
+* <todo; consider, /hwd3 hello world 3 project, CMake and arm64 R libs and OS libs, to cross compile for RPi Zero 2 W, for RPi Trixie OS and for Ubuntu Core 24 OS, priority high, >
 
 ## DONE
 * <done; intent to commit, >
