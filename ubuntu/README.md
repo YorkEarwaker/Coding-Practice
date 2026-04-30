@@ -33,11 +33,22 @@ tbd - find use case for these, if and when necessary for AGW project
 * Install, Develop with Go (Golang)
 * Install, Develop with .Net
 * Native compile with GraalVM
-* Checkpoint/Restore with OpenJDK CRaC
+* Checkpoint/Restore with OpenJDK CRaC, 
+* Zig, [WP](https://en.wikipedia.org/wiki/Zig_(programming_language)), replacement for C? , ARM64 only, 
 
 tbd - find use case for these, if and when necessary for AWG project
 * Ruby?
 * ...
+
+## Status
+TODO
+* <todo: consider, Zig programming language as alternative to C, requires Ubuntu 25+ , systems engineering, >
+* <todo: consider, Zig as use case of Ubuntu 26.04.1 Gnome dev env, BoM; small desktop box, separate monitor, key board, >
+* <todo: consider, Zig as use case of Ubuntu 26.04.1 Core headless embedded OS env, BoM; small desktop box, separate monitor, key board, >
+* <todo: consider, OpenJDK CRaC for Spring Boot project, determine Spring Boot use case in AGW project, is there one for /rpi-z/jva/snr-rsl BMV080? as microservice REST API?  >
+
+DONE
+* <done: consider, intent to commit, >
 
 ## References
 
