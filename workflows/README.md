@@ -26,7 +26,7 @@ TODO
 * <todo: consider, An Mobile Phone workflow, hand held, /? ,  practitioners, client side, smart phone, tablet, /ndr-hh? android? /apl-hh? apple? /ubn-hh? ubuntu? app development, ponder more, is there a foss candidate? foss for AGW specific kit? or BYO tech but multiple targets?, two seperate ecosystem considerations, BYO options likely necessary, AGW foss option likely a product management concern tdb, app development for mobile OS's or web dev for mobile via web browser on phone? likely app development first consideration, what is market penetration in different user community scenarios, also split out tablet from phone? ponder more, >
 * <todo: consider, infrastructure workflow, ITSM, ITIL, >
 * <todo: consider, some of this content relates to automation, or might become part of it when formalised, >
-* <todo: consider, some the automation content which is learning and exploration related belongs in this repo, to differentiate finding out and examples from formal process, >
+* <todo: consider, some the automation content which is learning and exploration related belongs in this repo, to differentiate finding out and examples from formal process, for example cmake tutorial things from automation repo,  >
 
 DONE
 * <done: consider, intent to commit, >
