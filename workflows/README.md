@@ -20,7 +20,6 @@ Context - thoughts on content
 
 ## Status
 TODO
-* <todo: consider, Ubuntu Core workflow, embedded, /ubn-em, IoT devices, wild side?, SoS, first snap deployment to Ubuntu Core for RPi Zero hardware, following Ubuntu Core development docs, >
 * <todo: consider, Ubuntu Server workflow, platform, /ubn-pf, services, server side, data, applications, >
 * <todo: consider, Ubuntu Desktop workflow, personal computer, /ubn-pc, practitioners, client side, tower, square, laptop, app development practice, support practice, end user practice, ... >
 * <todo: consider, An Mobile Phone workflow, hand held, /? ,  practitioners, client side, smart phone, tablet, /ndr-hh? android? /apl-hh? apple? /ubn-hh? ubuntu? app development, ponder more, is there a foss candidate? foss for AGW specific kit? or BYO tech but multiple targets?, two seperate ecosystem considerations, BYO options likely necessary, AGW foss option likely a product management concern tdb, app development for mobile OS's or web dev for mobile via web browser on phone? likely app development first consideration, what is market penetration in different user community scenarios, also split out tablet from phone? ponder more, >
@@ -31,6 +30,7 @@ TODO
 DONE
 * <done: consider, intent to commit, >
 * <done: consider, GitHub recommended things to do based on current repositories, repo, /gh-wf?, stub project, wip >
+* <done: consider, Ubuntu Core workflow, embedded, /ubn-em, IoT devices, wild side?, SoS, first snap deployment to Ubuntu Core for RPi Zero hardware, following Ubuntu Core development docs, early days, wip >
 
 ## References
 
