@@ -31,7 +31,10 @@ DONE
 ## Output - 
 Things to do to compile and deploy to Ubuntu Core
 * The activities and tasks undertaken in the workflow
-* <todo: consider, compile step is a prerequisite not to be described here, see Ubuntu coding practice for an application to build. >
+
+Prerequisite not to be described here
+* <todo: consider, compile step, see Ubuntu coding practice for an application to build. >
+* <todo: consider, test step, compiled application in container env for ubuntu core? docker? MAAX? is this possible, must be. hopefully gets pointed to in this process, it not add todo in Ubuntu coding practice, >
 
 ### Package Application as a Snap
 Hello world in first instance.
