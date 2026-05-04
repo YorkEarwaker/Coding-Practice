@@ -24,11 +24,13 @@ Learning aims - discovery, are these really todo's
 ## Status
 TODO
 * <todo: consider, first snap hello world to deploy to ubuntu core for rpi zero development workflow for IoT devices, build bespoke first ubuntu core image for AGW project things, >
+* <todo: consider, provide more detail for each activity and step in the workflow, verify the steps are correct, are some missing, wrongly named, provide Ubuntu Linux cli commands and output where appropriate, >
 
 DONE
 * <done: consider, intent to commit>
+* <done: consider, create skelleton outline of activities and tasks to complete for worklfow. >
 
-## Output - 
+## Output - workflow <name-tbd>
 Things to do to compile and deploy to Ubuntu Core
 * The activities and tasks undertaken in the workflow
 
