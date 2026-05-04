@@ -14,8 +14,9 @@ Objectives
 * To document, systems and software engineering concerns, 
 * To document, life cycle management concerns,
 
-Note. These are not business workflows of the omg's triple crown bpmn cmmn dmn kind notational specification and related design time or runtime tooling
-Note. These are experiments with and explorations of some workflow (automation) concerns not formal process and method.
+Context - thoughts on content
+* Note. These are not business workflows of the omg's triple crown bpmn cmmn dmn kind notational specification and related design time or runtime tooling
+* Note. These are experiments with and explorations of some workflow (automation) concerns not formal process and method.
 
 ## Status
 TODO
