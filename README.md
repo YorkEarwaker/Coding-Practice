@@ -22,6 +22,8 @@ TODO
 * <todo: consider, start C anc C++ and Assembly learning projects, >
 * <todo: consider, dead tree version of, Effective C: An Introduction to Professional C Programming by Robert C. Seacord, >
 * <todo: consider, start Rust learning project, >
+* <todo: consider, add Zig programming language, dependency on 25+ so likely Ubuntu 26 'Resolute Racoon', so requires 26 RR server/core/desktop instance to start to evaluate, >
+* <todo: consider, how well do Rust and Zig play together? Rust Zig and C C++ asm ecosystem, >
 
 DONE
 * <done: intent to commit, return to coding proficiency and related competencies, >
