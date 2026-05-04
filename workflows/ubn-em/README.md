@@ -6,7 +6,8 @@ Ubuntu Core for embedded IoT devices in the first instance,
 
 Objectives - primary
 * Using Ubuntu Core for embedded
-* First Ubuntu Core 'hello world' deployment to RPi Zero
+* Ubuntu Core 'hello world' application snap deployment to RPi Zero 2 W hardware
+* First cut application deployment workflow for AGW project IoT SBC devices
 
 Objectives - secondary, naturally fall out of primary objectives
 * Snap, generally first introduction, 
@@ -17,7 +18,7 @@ Learning aims - discovery, are these really todo's
 * snapcraft - use the, buildtool and framework for snap packaging
 * snap store - publish snap, repository for publishing snaps to, 
 * snapd - use the snap packaging daemon, install, run, and update applications
-* bespoke core image, - make one, 
+* bespoke core OS image - make one including new snap application
 
 ## Status
 TODO
