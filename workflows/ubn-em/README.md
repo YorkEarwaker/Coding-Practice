@@ -5,13 +5,14 @@ Ubuntu Core for embedded IoT devices in the first instance,
 ## Notes
 
 Objectives - primary
-* Using Ubuntu Core for embedded
 * Ubuntu Core 'hello world' application snap deployment to RPi Zero 2 W hardware
 * First cut application deployment workflow for AGW project IoT SBC devices
 
 Objectives - secondary, naturally fall out of primary objectives
-* Snap, generally first introduction, 
+* Snap, general first introduction, 
 * Snap, specifically for using with Ubuntu Core embedded 
+* Ubuntu Core, general first introduction for use in embedded
+* Ubuntu Core, specifically for use the Raspberry Pi Zero 2 W and RPi ecosystem compatability
 
 Learning aims - discovery, are these really todo's
 * snap - create a snap package, package format 
