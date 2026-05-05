@@ -1,6 +1,6 @@
 # GitHub workflow gh-wf
 
-Utilise workflows in GitHub for automation purposes. 
+Utilise workflows/pipelines in GitHub for automation purposes. 
 
 ## Notes
 
@@ -13,7 +13,7 @@ Objectives - 5 May 2026
 ## Status
 
 TODO
-* <todo: consider, investigate GitHub workflows to better understand them and commitments on my part the part of the user, >
+* <todo: consider, investigate GitHub workflows to better understand them and commitments on my part the part of the user, compute and storage, other tbd? >
 * <todo: consider, find use case for workflow, implement one, in the GitHub workflow service, >
 * <todo: consider, mix between localhost workflows and remote repo workflows, remote offerings by GitHub and GitLab and others, >
 
