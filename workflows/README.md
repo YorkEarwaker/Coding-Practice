@@ -3,7 +3,7 @@
 Activities and tasks using various technology for delivery of AGW projects, in first instance.
 
 See also 
-* Automation repo, [GH](https://github.com/YorkEarwaker/Automation), cidc, build, ..., 
+* Automation repo, [GH](https://github.com/YorkEarwaker/Automation), cicd, build, ..., 
 
 ## Notes
 Process and method for product development and delivery of a technical nature, discovery and notes of same
@@ -12,11 +12,11 @@ Objectives
 * To achieve, understanding of first cut development and deployment activities for AGW projects, 
 * To achieve, experience with tool enabled accelerators, but might lead to vendor lock in, but speed ttm, 
 * To document, systems and software engineering concerns, 
-* To document, life cycle management concerns,
+* To document, life cycle management concerns, 
 
 Context - thoughts on content
 * Note. These are not business workflows of the omg's triple crown bpmn cmmn dmn kind notational specification and related design time or runtime tooling
-* Note. These are experiments with and explorations of some workflow (automation) concerns not formal process and method.
+* Note. These are experiments with and explorations of some workflow/pipeline (automation) concerns not AGW project formal process and method.
 
 ## Status
 TODO
@@ -37,6 +37,10 @@ DONE
 
 Learning
 * Learn YAML, [WS](https://learnxinyminutes.com/yaml/), superset of JSON 
+
+Terms
+* workflow
+* pipeline
 
 
 
