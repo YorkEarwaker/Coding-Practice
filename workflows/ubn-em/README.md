@@ -2,6 +2,9 @@
 
 Ubuntu Core for embedded IoT devices in the first instance, 
 
+See also
+* SSH, <todo: link to repo here, >,  networks
+
 ## Notes
 
 Objectives - primary
@@ -25,10 +28,12 @@ Learning aims - discovery, are these really todo's
 TODO
 * <todo: consider, first snap hello world to deploy to ubuntu core for rpi zero development workflow for IoT devices, build bespoke first ubuntu core image for AGW project things, >
 * <todo: consider, provide more detail for each activity and task in the workflow, verify the steps are correct, are some missing, wrongly named, provide Ubuntu Linux cli commands and output where appropriate, >
+* <done: consider, try pre built image, core26, on RPi Z2W, >
 
 DONE
 * <done: consider, intent to commit>
 * <done: consider, create skelleton outline of activities and tasks to complete for worklfow. >
+* <done: consider, try pre built image, core24, should try again for practice, successfully copied to MicroSD Card, configured via serial connection to RPi Z2W, connected via Ubuntu One SSH subsequently, not rigoursly tested core24 on RPI Z2W, no problems at present 7 May 2026, activities to date; logon via One SSH, query Zero hardware, >
 
 ## Output - workflow <name-tbd>
 Things to do to compile and deploy to Ubuntu Core
@@ -36,7 +41,7 @@ Things to do to compile and deploy to Ubuntu Core
 
 Prerequisite not to be described here
 * <todo: consider, compile step, see Ubuntu coding practice for an application to build. >
-* <todo: consider, test step, compiled application in container env for ubuntu core? docker? MAAX? is this possible, must be. hopefully gets pointed to in this process, it not add todo in Ubuntu coding practice, >
+* <todo: consider, test step, compiled application in container env for ubuntu core? docker? Multipass? MAAX? is this possible, must be. hopefully gets pointed to in this process, it not add todo in Ubuntu coding practice, >
 
 ### Package Application as a Snap
 Hello world in first instance.
