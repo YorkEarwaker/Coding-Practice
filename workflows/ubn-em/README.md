@@ -64,15 +64,32 @@ Ubuntu Core images are defined as model assertions.
 * Write the Hardware, use Raspberry Pi Imager or dd to write image to SD Card or MicroSD Card 
 * Boot, on Raspberry Pi Zero 2 W in first instance
 
+## Output - tutorial; make a snap
+* content follows Craft a Snap from Ubunut documentation, retrieved 8 May 2026
+
+
+
 ## Libs
 
-Stuff - <todo: rename, headline, >
+BoM - <todo: rename, headline, >
 * Ubuntu Core, [WS](https://ubuntu.com/core), Ubuntu, immutable embedded Linux OS
 * Snapcraft, [WS](https://snapcraft.io/docs/), Ubuntu, build tool and framework for snap packaging
+* LDX - container, share host kernel, possible conflict with Docker
+
+BoM Alt
+* Multipass - VM, own kernel, more resource intensive, can be used instead of LDX
+
+Note 1. Docker, share host kernel, application deployment, localhost or cloud, not used in snap/snapcraft development. 
 
 ## References
 
-Docs
+Docs - core
 * Ubuntu Core, [WS](https://documentation.ubuntu.com/core/), docs, Ubuntu
-* Snap, [WS](https://documentation.ubuntu.com/snapcraft/stable/), docs, snapcraft, Ubuntu,
 * 
+
+Docs - snap
+* Snap, [WS](https://documentation.ubuntu.com/snapcraft/stable/), docs, snapcraft, Ubuntu,
+* Craft a Snap, [WS](https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/), docs, tutorial, snapcraft, Ubuntu, hand craft a snap, 
+* 
+
+
