@@ -28,14 +28,16 @@ Learning aims - discovery, are these really todo's
 TODO
 * <todo: consider, first snap hello world to deploy to ubuntu core for rpi zero development workflow for IoT devices, build bespoke first ubuntu core image for AGW project things, >
 * <todo: consider, provide more detail for each activity and task in the workflow, verify the steps are correct, are some missing, wrongly named, provide Ubuntu Linux cli commands and output where appropriate, >
-* <done: consider, try pre built image, core26, on RPi Z2W, >
+* <todo: consider, try pre built image, core26, on RPi Z2W, >
+* <todo: consider, complete create core image tutorial use as foundation for moving forward with AGW workflow below, >
+* <todo: consider, complete create a snap tutorial use as foundation for moving forward with AGW workflow below, >
 
 DONE
 * <done: consider, intent to commit>
 * <done: consider, create skelleton outline of activities and tasks to complete for worklfow. >
 * <done: consider, try pre built image, core24, should try again for practice, successfully copied to MicroSD Card, configured via serial connection to RPi Z2W, connected via Ubuntu One SSH subsequently, not rigoursly tested core24 on RPI Z2W, no problems at present 7 May 2026, activities to date; logon via One SSH, query Zero hardware, >
 
-## Output - workflow <name-tbd>
+## Output - workflow AGW Ubuntu Core for RPi
 Things to do to compile and deploy to Ubuntu Core
 * The activities and tasks undertaken in the workflow
 
@@ -64,9 +66,14 @@ Ubuntu Core images are defined as model assertions.
 * Write the Hardware, use Raspberry Pi Imager or dd to write image to SD Card or MicroSD Card 
 * Boot, on Raspberry Pi Zero 2 W in first instance
 
-## Output - tutorial; make a snap
-* content follows Craft a Snap from Ubunut documentation, retrieved 8 May 2026
+## Output - tutorial - create a core image
+* content follows Build Your First Image from Ubuntu documentation, [WS](https://documentation.ubuntu.com/core/tutorials/build-your-first-image/), retrieved 8 May 2026
+* ...
 
+
+## Output - tutorial - create a snap
+* content follows Craft a Snap from Ubuntu documentation, [WS](https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/), retrieved 8 May 2026
+* ...
 
 
 ## Libs
