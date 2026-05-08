@@ -79,7 +79,7 @@ BoM - <todo: rename, headline, >
 BoM Alt
 * Multipass - VM, own kernel, virtual hardware emulation, more resource intensive, isolated Ubuntu vm, dev env's, can be used instead of LDX
 
-Note 1. Docker, share host kernel, application deployment, localhost or cloud, not used in snap/snapcraft development. 
+Note 1. Docker, share host kernel, application deployment, localhost or cloud, not used in snap/snapcraft development, issues running snap on Docker, no longer supported?. 
 
 ## References
 
@@ -92,4 +92,5 @@ Docs - snap
 * Craft a Snap, [WS](https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/), docs, tutorial, snapcraft, Ubuntu, hand craft a snap, 
 * 
 
-
+News Papers - snap development
+* Reasoning behind the move to multipass, [WS](https://forum.snapcraft.io/t/reasoning-behind-the-move-to-multipass/9648), Canonical, snapcraft, 
