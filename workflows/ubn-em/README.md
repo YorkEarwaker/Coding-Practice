@@ -74,10 +74,10 @@ Ubuntu Core images are defined as model assertions.
 BoM - <todo: rename, headline, >
 * Ubuntu Core, [WS](https://ubuntu.com/core), Ubuntu, immutable embedded Linux OS
 * Snapcraft, [WS](https://snapcraft.io/docs/), Ubuntu, build tool and framework for snap packaging
-* LDX - container, share host kernel, possible conflict with Docker
+* LDX - container, share host kernel, lightweight, system level service, dev env's, possible conflict with Docker, thousands of instances per host, 
 
 BoM Alt
-* Multipass - VM, own kernel, more resource intensive, can be used instead of LDX
+* Multipass - VM, own kernel, virtual hardware emulation, more resource intensive, isolated Ubuntu vm, dev env's, can be used instead of LDX
 
 Note 1. Docker, share host kernel, application deployment, localhost or cloud, not used in snap/snapcraft development. 
 
