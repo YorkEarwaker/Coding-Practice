@@ -94,10 +94,10 @@ Note 1. Docker, share host kernel, application deployment, localhost or cloud, n
 ## References
 
 Terms
-* SBoM, software bill of materials, [WP](https://en.wikipedia.org/wiki/Software_supply_chain), cisa [WS](https://www.cisa.gov/topics/information-communications-technology-supply-chain-security/sbom), ncsc [WS](https://www.ncsc.gov.uk/blog-post/sboms-and-the-importance-of-inventory), aka software supply chain, 
+* SBoM, software bill of materials, [WP](https://en.wikipedia.org/wiki/Software_supply_chain), cisa [WS](https://www.cisa.gov/topics/information-communications-technology-supply-chain-security/sbom), ncsc [WS](https://www.ncsc.gov.uk/blog-post/sboms-and-the-importance-of-inventory), aka software supply chain, two types required, human readable, machine readable, 
 * Supply chain security, ncsc [WS](https://www.ncsc.gov.uk/collection/supply-chain-security), CSO, other CxO offices, board level responsibility? 
-* SCA, Software composition analysis, automation, check nested dependencies particularly of open source products are all up to date and patched for vulnerabilities aka security issues, 
-* Vulnerabilities, of software component elements, in the supply chain,
+* SCA, Software composition analysis, automation, check nested dependencies particularly of open source products are all up to date and patched for vulnerabilities aka security issues, known defects, proscribed providers, design flaws, and so on, 
+* Vulnerabilities, of software component elements, in the supply chain, vulnerability scanner automation reading and assessment of machine readable SBoM's .
 
 Docs - core
 * Ubuntu Core, [WS](https://documentation.ubuntu.com/core/), docs, Ubuntu
