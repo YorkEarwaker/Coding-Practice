@@ -39,9 +39,10 @@ DONE
 * <done: consider, create skelleton outline of activities and tasks to complete for worklfow. >
 * <done: consider, try pre built image, core24, should try again for practice, successfully copied to MicroSD Card, configured via serial connection to RPi Z2W, connected via Ubuntu One SSH subsequently, not rigoursly tested core24 on RPI Z2W, no problems at present 7 May 2026, activities to date; logon via One SSH, query Zero hardware, >
 
-## Output - workflow - create AGW Ubuntu Core image for install on RPi
+## Output - workflow - create AGW Ubuntu Core image for install on embedded device
 Things to do to compile and deploy to Ubuntu Core
 * The activities and tasks undertaken in the workflow
+* concentrate of Raspberry Pi ARM SBC embedded devices in first instance, core image and AGW snap applications
 
 Prerequisite not to be described here
 * <todo: consider, compile step, see Ubuntu coding practice for an application to build. >
