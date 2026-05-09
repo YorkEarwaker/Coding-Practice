@@ -3,7 +3,7 @@
 Ubuntu Core for embedded IoT devices in the first instance, 
 
 See also
-* SSH, <todo: link to repo here, >,  networks
+* SSH, [GH](https://github.com/YorkEarwaker/Networks/tree/main/ssh), networks
 
 ## Notes
 
@@ -29,15 +29,17 @@ TODO
 * <todo: consider, first snap hello world to deploy to ubuntu core for rpi zero development workflow for IoT devices, build bespoke first ubuntu core image for AGW project things, >
 * <todo: consider, provide more detail for each activity and task in the workflow, verify the steps are correct, are some missing, wrongly named, provide Ubuntu Linux cli commands and output where appropriate, >
 * <todo: consider, try pre built image, core26, on RPi Z2W, >
-* <todo: consider, complete create core image tutorial use as foundation for moving forward with AGW workflow below, >
-* <todo: consider, complete create a snap tutorial use as foundation for moving forward with AGW workflow below, >
+* <todo: consider, complete create core image tutorial use as foundation for moving toward first cut workflow for AGW below, >
+* <todo: consider, complete create a snap tutorial use as foundation for moving toward first cut workflow for AGW below, >
+* <todo: consider, combine create a snap and create a core image as workflow create AGW Ubuntu Core for RPi, >
+* <todo: consider, read the ncsc supply chain security and SBoM content, at least it is logged as an concern, keep under review, security sec part of DevSecOps, necessary but feels like homework, concern of the chief security officer CSO specifically, concern of many generally to be aware of,  >
 
 DONE
-* <done: consider, intent to commit>
+* <done: consider, intent to commit, >
 * <done: consider, create skelleton outline of activities and tasks to complete for worklfow. >
 * <done: consider, try pre built image, core24, should try again for practice, successfully copied to MicroSD Card, configured via serial connection to RPi Z2W, connected via Ubuntu One SSH subsequently, not rigoursly tested core24 on RPI Z2W, no problems at present 7 May 2026, activities to date; logon via One SSH, query Zero hardware, >
 
-## Output - workflow AGW Ubuntu Core for RPi
+## Output - workflow - create AGW Ubuntu Core for RPi
 Things to do to compile and deploy to Ubuntu Core
 * The activities and tasks undertaken in the workflow
 
@@ -77,18 +79,23 @@ Ubuntu Core images are defined as model assertions.
 
 
 ## Libs
+List main elements of a software bill of materials 
 
-BoM - <todo: rename, headline, >
+SBoM - Main software component dependency
 * Ubuntu Core, [WS](https://ubuntu.com/core), Ubuntu, immutable embedded Linux OS
 * Snapcraft, [WS](https://snapcraft.io/docs/), Ubuntu, build tool and framework for snap packaging
 * LDX - container, share host kernel, lightweight, system level service, dev env's, possible conflict with Docker, thousands of instances per host, 
 
-BoM Alt
-* Multipass - VM, own kernel, virtual hardware emulation, more resource intensive, isolated Ubuntu vm, dev env's, can be used instead of LDX
+SBoM - Alternative software components
+* Multipass - VM, own kernel, virtual hardware emulation, more resource intensive, isolated Ubuntu vm, dev env's, cross platform, can be used instead of LDX
 
 Note 1. Docker, share host kernel, application deployment, localhost or cloud, not used in snap/snapcraft development, issues running snap on Docker, no longer supported?. 
 
 ## References
+
+Terms
+* SBoM, software bill of materials, [WP](), cisa [WS](https://www.cisa.gov/topics/information-communications-technology-supply-chain-security/sbom), ncsc [WS](https://www.ncsc.gov.uk/blog-post/sboms-and-the-importance-of-inventory)
+* Supply chain security, ncsc [WS](https://www.ncsc.gov.uk/collection/supply-chain-security), CSO, other CxO offices, board level responsibility? 
 
 Docs - core
 * Ubuntu Core, [WS](https://documentation.ubuntu.com/core/), docs, Ubuntu
