@@ -39,7 +39,7 @@ DONE
 * <done: consider, create skelleton outline of activities and tasks to complete for worklfow. >
 * <done: consider, try pre built image, core24, should try again for practice, successfully copied to MicroSD Card, configured via serial connection to RPi Z2W, connected via Ubuntu One SSH subsequently, not rigoursly tested core24 on RPI Z2W, no problems at present 7 May 2026, activities to date; logon via One SSH, query Zero hardware, >
 
-## Output - workflow - create AGW Ubuntu Core for RPi
+## Output - workflow - create AGW Ubuntu Core image for install on RPi
 Things to do to compile and deploy to Ubuntu Core
 * The activities and tasks undertaken in the workflow
 
