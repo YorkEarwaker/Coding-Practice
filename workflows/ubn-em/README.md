@@ -32,7 +32,8 @@ TODO
 * <todo: consider, complete create core image tutorial use as foundation for moving toward first cut workflow for AGW below, >
 * <todo: consider, complete create a snap tutorial use as foundation for moving toward first cut workflow for AGW below, >
 * <todo: consider, combine create a snap and create a core image as workflow create AGW Ubuntu Core for RPi, >
-* <todo: consider, read the ncsc supply chain security and SBoM content, at least it is logged as an concern, keep under review, security sec part of DevSecOps, necessary but feels like homework, concern of the chief security officer CSO specifically, concern of many generally to be aware of, toward vulnerability scanning automation worklow to be determined and documented elsewhere in automation repo, >
+* <todo: consider, read the ncsc supply chain security and SBoM content, at least it is logged as an concern, keep under review, security sec part of DevSecOps, necessary but feels like homework, concern of the chief security officer CSO specifically, concern of many generally to be aware of, toward vulnerability scanning automation workflow to be determined and documented elsewhere in automation repo, >
+* <todo: consider, add link to EU Cybersecurity Regulation, more homework, read?, do first scan of headings and exec summary, >
 
 DONE
 * <done: consider, intent to commit, >
