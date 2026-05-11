@@ -70,6 +70,9 @@ Ubuntu Core images are defined as model assertions.
 * Write the Hardware, use Raspberry Pi Imager or dd to write image to SD Card or MicroSD Card 
 * Boot, on Raspberry Pi Zero 2 W in first instance
 
+Postrequisite not to be described here
+* <todo: consider, install Core image and boot Raspberry Pi Z2W , >
+
 ## Output - tutorial - create a core image
 * content follows Build Your First Image from Ubuntu documentation, [WS](https://documentation.ubuntu.com/core/tutorials/build-your-first-image/), retrieved 8 May 2026
 * ...
