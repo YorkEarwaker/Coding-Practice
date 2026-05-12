@@ -4,6 +4,7 @@ Ubuntu Core for embedded IoT devices in the first instance,
 
 See also
 * SSH, [GH](https://github.com/YorkEarwaker/Networks/tree/main/ssh), networks
+* RPi Z, [GH](https://github.com/YorkEarwaker/Electrical-Engineering/tree/main/rpi-z), electrical engineering
 
 ## Notes
 
@@ -68,10 +69,10 @@ Ubuntu Core images are defined as model assertions.
 * Install the tools
 * Generate the image
 * Write the Hardware, use Raspberry Pi Imager or dd to write image to SD Card or MicroSD Card 
-* Boot, on Raspberry Pi Zero 2 W in first instance
+* Boot and use bespoke snap with AGW app, - after OS install see Postrequisite below, on Raspberry Pi Zero 2 W in first instance
 
 Postrequisite not to be described here
-* <todo: consider, install Core image and boot Raspberry Pi Z2W , >
+* <todo: consider, install Core image and boot Raspberry Pi Z2W , see also RPi Z link above for example output of Ubuntu Core 24 install on RPi Z 2 W, >
 
 ## Output - tutorial - create a core image
 * content follows Build Your First Image from Ubuntu documentation, [WS](https://documentation.ubuntu.com/core/tutorials/build-your-first-image/), retrieved 8 May 2026
@@ -111,7 +112,7 @@ Docs - core
 Docs - snap
 * Snap, [WS](https://documentation.ubuntu.com/snapcraft/stable/), docs, snapcraft, Ubuntu,
 * Craft a Snap, [WS](https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/), docs, tutorial, snapcraft, Ubuntu, hand craft a snap, 
-* 
+* ...
 
 News Papers - snap development
 * Reasoning behind the move to multipass, [WS](https://forum.snapcraft.io/t/reasoning-behind-the-move-to-multipass/9648), Canonical, snapcraft, 
