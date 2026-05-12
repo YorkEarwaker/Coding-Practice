@@ -69,7 +69,7 @@ Ubuntu Core images are defined as model assertions.
 * Install the tools
 * Generate the image
 * Write the Hardware, use Raspberry Pi Imager or dd to write image to SD Card or MicroSD Card 
-* Boot and use bespoke snap with AGW app, - after OS install see Postrequisite below, on Raspberry Pi Zero 2 W in first instance
+* Boot and use bespoke snap containing AGW app, - after OS install see Postrequisite below, on Raspberry Pi Zero 2 W in first instance
 
 Postrequisite not to be described here
 * <todo: consider, install Core image and boot Raspberry Pi Z2W , see also RPi Z link above for example output of Ubuntu Core 24 install on MicroSD Card on RPi Z 2 W, >
