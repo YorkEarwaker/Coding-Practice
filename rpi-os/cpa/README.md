@@ -1,4 +1,4 @@
-# C Cpp ASC cpa
+# C Cpp ASM cpa
 
 RPi SBC's with RPi OS using C/C++ code base, .
 
