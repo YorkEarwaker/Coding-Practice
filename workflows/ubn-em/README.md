@@ -120,10 +120,24 @@ Docs - Ubuntu snap
 Docs - Ubuntu launchpad
 * raspi-config package in Ubuntu [WS](https://launchpad.net/ubuntu/+source/raspi-config), Ubuntu, Luanchpad, 
 
+Docs - Ubuntu tutorials
+* How to use Raspberry Pi GPIO pins with Ubuntu [WS](https://ubuntu.com/tutorials/gpio-on-raspberry-pi#1-overview), Ubuntu, python <todo: consider, move to phthon for Ubuntu project, >
+
 News Papers - snap development
 * Reasoning behind the move to multipass, [WS](https://forum.snapcraft.io/t/reasoning-behind-the-move-to-multipass/9648), Canonical, snapcraft, 
 
 News Papers - RPi OS vs Ubuntu core, pros cons, interoperable or cross platform deb's snaps 
 * Are there any Drawbacks to Using Ubuntu Rather than Raspberry Pi OS?? [WS](https://www.reddit.com/r/raspberry_pi/comments/1l2mtnk/are_there_any_drawbacks_to_using_ubuntu_rather/), Reddit, raspberry_pi
 * Setting Up A Raspberry Pi for Data Engineering and Virtualization Projects [WS](https://chriskornaros.dev/pages/guides/posts/raspberry_pi_server.html), Chris Kornaros, May 20, 2025
-* 
+* ...
+
+Consider, move everything below to respective coding projects <todo: consider, move to C/C++ or ASM for Ubuntu project, >
+
+News Papers - GPIO C/C++
+* How to Control GPIO Hardware from C or C++ [WS](https://www.ics.com/blog/how-control-gpio-hardware-c-or-c), code [GH](https://github.com/tranter/blogs/tree/master/gpio/part5), 14 August 2019, Jeff Tranter, 
+* Current proper way to interface GPIO from C code? [WS](https://raspberrypi.stackexchange.com/questions/147465/current-proper-way-to-interface-gpio-from-c-code), Raspberry Pi, StackExchange, 
+* ...
+* ..,
+
+News Papers - GPIO ASM
+* Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi, [WS](https://bob.cs.sonoma.edu/IntroCompOrg-RPi/intro-co-rpi.html)
