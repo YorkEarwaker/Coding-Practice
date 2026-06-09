@@ -35,6 +35,8 @@ TODO
 * <todo: consider, combine create a snap and create a core image as workflow create AGW Ubuntu Core for RPi, >
 * <todo: consider, read the ncsc supply chain security and SBoM content, at least it is logged as an concern, keep under review, security sec part of DevSecOps, necessary but feels like homework, concern of the chief security officer CSO specifically, concern of many generally to be aware of, toward vulnerability scanning automation workflow to be determined and documented elsewhere in automation repo, >
 * <todo: consider, add link to EU Cybersecurity Regulation, more homework, read?, do first scan of headings and exec summary, >
+* <todo: consider, install raspi-config on Ubuntu Core for Raspberry Pi, would require a raspi-config snap, does raspi-config snap exist? primarily useful for GPIO and interface configurations, but there will be limitations on use like no overclocking due to kernel and lib and other differences, >
+* <todo: consider, RPi Pi controller servos or sensors with Ubuntu core may be too difficult at this time? but hoped for end state, reconsider and prioritise RPi OS for now to speed AGW RnD, Ubuntu Server and Ubuntu Core for production env? Secure env best case would be Ubuntu Core but hurdles are likely large at this time, >
 
 DONE
 * <done: consider, intent to commit, >
@@ -105,14 +107,22 @@ Terms
 * SCA, Software composition analysis, automation, check nested dependencies particularly of open source products are all up to date and patched for vulnerabilities aka security issues, known defects, proscribed providers, design flaws, and so on, 
 * Vulnerabilities, of software component elements, in the supply chain, vulnerability scanner automation parsing and rules of the assessment of machine readable SBoM's .
 
-Docs - core
+Docs - Ubuntu core
 * Ubuntu Core, [WS](https://documentation.ubuntu.com/core/), docs, Ubuntu
 * 
 
-Docs - snap
+Docs - Ubuntu snap
 * Snap, [WS](https://documentation.ubuntu.com/snapcraft/stable/), docs, snapcraft, Ubuntu,
 * Craft a Snap, [WS](https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/), docs, tutorial, snapcraft, Ubuntu, hand craft a snap, 
 * ...
 
+Docs - Ubuntu launchpad
+* raspi-config package in Ubuntu [WS](https://launchpad.net/ubuntu/+source/raspi-config), Ubuntu, Luanchpad, 
+
 News Papers - snap development
 * Reasoning behind the move to multipass, [WS](https://forum.snapcraft.io/t/reasoning-behind-the-move-to-multipass/9648), Canonical, snapcraft, 
+
+News Papers - RPi OS vs Ubuntu core, pros cons, interoperable or cross platform deb's snaps 
+* Are there any Drawbacks to Using Ubuntu Rather than Raspberry Pi OS?? [WS](https://www.reddit.com/r/raspberry_pi/comments/1l2mtnk/are_there_any_drawbacks_to_using_ubuntu_rather/), Reddit, raspberry_pi
+* Setting Up A Raspberry Pi for Data Engineering and Virtualization Projects [WS](https://chriskornaros.dev/pages/guides/posts/raspberry_pi_server.html), Chris Kornaros, May 20, 2025
+* 
