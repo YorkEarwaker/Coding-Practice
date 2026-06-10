@@ -37,6 +37,7 @@ TODO
 * <todo: consider, add link to EU Cybersecurity Regulation, more homework, read?, do first scan of headings and exec summary, >
 * <todo: consider, install raspi-config on Ubuntu Core for Raspberry Pi, would require a raspi-config snap, does raspi-config snap exist? primarily useful for GPIO and interface configurations, but there will be limitations on use like no overclocking due to kernel and lib and other differences, raspi-config is listed in Ubuntu Launchpad, see below, further investigation required, >
 * <todo: consider, Ubuntu Launchpad, how can this expidite development for Ubuntu Core on RPi SBC's and for AGW projects, AGW projects might have targets other than RPi SBC's, >
+* <todo: consider, understand snap confinment requirements for Ubuntu Core and implications for AGW project snaps, >
 
 DONE
 * <done: consider, intent to commit, >
