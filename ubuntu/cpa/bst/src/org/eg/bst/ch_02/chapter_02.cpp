@@ -4,12 +4,13 @@
 */ 
 
 #include <iostream> // cin, cout, printf
-// consider import statement instead
+// consider import statement instead/as well
 
 /*
 ** function declarations
 */
 int procedural_programming();
+void some_function();
 bool accept();
 bool accept2();
 bool accept3();
@@ -35,7 +36,22 @@ int procedural_programming()
 
 /*
 ** 2.3 Procedural Programming
+** 
+** Decide which procedures you want;
+** use the best algorithms you can find.
 */
+
+/*
+** 2.3.1 Variables and Arithmetic
+*/
+
+void some_function()  // function that does not return a value
+{
+  double d = 2.2;     // initialise floating-point number
+  int i = 7;          // initialise integer
+  d = d+i;            // assign sum to d
+  i = d*i;            // assign product to i
+}
 
 /*
 ** 2.3.2 Tests and loops
@@ -87,9 +103,16 @@ bool accept3()
       std::cout << "Sorry, I don't understand that . \n";
       tries = tries +1;
     }
-  }
+  a
   std::cout << "I'll take that for a no. \n";
   return false;
 }
+
+/*
+** 2.4 Modular Programming
+** 
+** Decide what modules you want,
+** partition the program so that data is hidden within modules
+*/
 
 

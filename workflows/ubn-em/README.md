@@ -10,7 +10,7 @@ See also
 
 Objectives - primary
 * Ubuntu Core 'hello world' application snap deployment to RPi Zero 2 W hardware
-* First cut application deployment workflow for AGW project IoT SBC devices
+* First cut application deployment workflow for AGW project production environment IoT SBC devices
 
 Objectives - secondary, naturally fall out of primary objectives
 * Snap, general first introduction, 

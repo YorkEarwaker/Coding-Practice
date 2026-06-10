@@ -1,0 +1,3 @@
+/home/york-earwaker/Documents/dev/repo/coding-practice/ubuntu/cpa/bst/bld/CMakeFiles/chapter_02.o.dir
+/home/york-earwaker/Documents/dev/repo/coding-practice/ubuntu/cpa/bst/bld/CMakeFiles/edit_cache.dir
+/home/york-earwaker/Documents/dev/repo/coding-practice/ubuntu/cpa/bst/bld/CMakeFiles/rebuild_cache.dir

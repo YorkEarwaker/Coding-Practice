@@ -1,0 +1,1 @@
+/usr/bin/clang++ CMakeFiles/chapter_02.o.dir/src/org/eg/bst/ch_02/chapter_02.cpp.o -o /home/york-earwaker/Documents/dev/repo/coding-practice/ubuntu/cpa/bst/bin/chapter_02.o 

@@ -13,7 +13,7 @@ Stakeholder concerns
 * Ethical and social responosibility
 * Decision making
 
-Addresssing Concerns
+Addrsssing Concerns
 * Identify and analyze stakeholders
 * Active listening 
 * Aknowledge and empathize
@@ -24,8 +24,7 @@ Addresssing Concerns
 ## Status
 
 TODO
-* <todo: define deliverables. candidate doc; boscard, scenario, . candidate deck; context diagrams? candidate model; concept?  >
-* <todo: define templates for deliverables. >
+* <todo: define deliverables>
 * <todo: refind concerns activity lists above, cite sources below, current source Brave search >
 
 ## References

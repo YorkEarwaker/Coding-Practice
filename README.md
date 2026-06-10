@@ -24,6 +24,7 @@ TODO
 * <todo: consider, start Rust learning project, >
 * <todo: consider, add Zig programming language, dependency on 25+ so likely Ubuntu 26 'Resolute Racoon', so requires 26 RR server/core/desktop instance to start to evaluate, >
 * <todo: consider, how well do Rust and Zig play together? Rust Zig and C C++ asm ecosystem, >
+* <todo: consider, put the content here Codiing Practice under local git control, >
 
 DONE
 * <done: intent to commit, return to coding proficiency and related competencies, >
