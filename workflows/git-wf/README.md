@@ -8,7 +8,7 @@ Useful things to do with git.
 
 ## Status
 TODO
-* <todo: consider, attempt git 'clone' equivalent to an existing non empty director using; git init, git remote add origin `\<url\>`, git fetch, and git checkout >
+* <todo: consider, attempt git 'clone' equivalent to an existing non empty director using; git init, git remote add origin `<url>`, git fetch, and git checkout >
 
 DONE
 * <done: consider, intent to commit>
@@ -31,7 +31,7 @@ $ git remote -v
 origin	https://github.com/YorkEarwaker/Coding-Practice.git (fetch)
 origin	https://github.com/YorkEarwaker/Coding-Practice.git (push)
 $ git status
-$ git add cabs codewars rpi-os ubuntu workflows LICENCE .gitignore README.md
+$ git add <a-file> <directory> <directory-two> <dir-other> <x-file> <.hidden-file> 
 $ git status
 $ git commit -m "git local learning"
 $ git push origin
@@ -43,4 +43,5 @@ Git docs
 * Http Protocol, [WS](https://git-scm.com/docs/http-protocol), Git
 
 News Papers - usage
-* Git: What's the best practice to "git clone" into an existing folder? [WS](https://stackoverflow.com/questions/5377960/git-whats-the-best-practice-to-git-clone-into-an-existing-folder), StackOverflow, 
+* Git: What's the best practice to "git clone" into an existing folder? [WS](https://stackoverflow.com/questions/5377960/git-whats-the-best-practice-to-git-clone-into-an-existing-folder), 21 Mar 2011, StackOverflow, 
+* How do I clone into a non-empty directory? [WS](https://stackoverflow.com/questions/2411031/how-do-i-clone-into-a-non-empty-directory), 9 Mar 2010, StackOverflow, 
