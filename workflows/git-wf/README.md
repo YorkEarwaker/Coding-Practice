@@ -1,10 +1,11 @@
 # git workflow git-wf
 
-Local host use of git with git compliant remote repositories like GitHub GitLab Bitbucket SourceForge others to list
+Local host use of git with git compliant remote repositories like GitHub GitLab Bitbucket SourceForge others to list .
 
 ## Notes
+Notes to self.
 
-Useful things to do with git.
+Useful things to do with git. 
 
 ## Status
 TODO
@@ -41,6 +42,8 @@ $ git push origin
 
 Git docs
 * Http Protocol, [WS](https://git-scm.com/docs/http-protocol), Git
+* 2.1 Git Basics - Getting a Git Repository, [WS](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository), Git
+* ...
 
 News Papers - usage
 * Git: What's the best practice to "git clone" into an existing folder? [WS](https://stackoverflow.com/questions/5377960/git-whats-the-best-practice-to-git-clone-into-an-existing-folder), 21 Mar 2011, StackOverflow, 

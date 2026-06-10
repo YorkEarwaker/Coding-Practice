@@ -6,6 +6,8 @@ RPi SBC's with RPi OS using C/C++ code base, .
 
 Concerns
 * Difficulties getting started due to lack of official documentation.
+* Likely due to keeping learning pathways open and not prescribing boiler plate solutions. 
+* The learning is in the do, try, fail, to success in incremental wins
 
 Targets
 * Initial target SBC architecture, RPi Z 2 W [WS](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/), News [WS](https://www.raspberrypi.com/news/new-raspberry-pi-zero-2-w-2/), Raspberry Pi,
@@ -15,10 +17,15 @@ Targets
 * Arm Cortex-A53 MPCore Processor Technical Reference Manual [WS](https://developer.arm.com/documentation/ddi0500/latest/), ARM, 
 * ...
 
+Objectives
+* Cross compile toolchain, dev env Ubuntu Desktop deployment env RPi SBC running RPi OS e.g. (RPi Z 2 W running Trixi Lite)
+* Cross compile Bosch BMV sensor C/Cpp code for deployment to RPi Z 2 W running Trixi Lite
+
 ## Status
 TODO
 * <todo: consider, first RPi OS gipo C++ for ISP and I2C, getting this working first before attempting Ubuntu Core deployment, >
 * <todo: consider, identify C/C++ libraries for RPi OS GPIO access, >
+* <todo: consider, ask question in Raspberry Pi Forum, re processor agnostic and kernel agnostic library of GPIO, set expectations for requirement, outline different leaning objectives >
 
 DONE
 * <done: consider, intent to commit>
