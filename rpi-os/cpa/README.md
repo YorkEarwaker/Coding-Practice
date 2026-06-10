@@ -4,10 +4,16 @@ RPi SBC's with RPi OS using C/C++ code base, .
 
 ## Notes
 
+Concerns
 * Difficulties getting started due to lack of official documentation.
-* Initial target SBC architecture, RPi Z 2 W [WS](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/), News [WS](https://www.raspberrypi.com/news/new-raspberry-pi-zero-2-w-2/)
-* System in a package (SIP), RP3A0
-* System on a chip (SOC), Broadcom BCM2710A1, quad-core 64-bit ARM Cortex A53, 512MB SDRAM
+
+Targets
+* Initial target SBC architecture, RPi Z 2 W [WS](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/), News [WS](https://www.raspberrypi.com/news/new-raspberry-pi-zero-2-w-2/), Raspberry Pi,
+* System in a package (SIP), RP3A0 [WS](https://www.raspberrypi.com/documentation/computers/processors.html#rp3a0), Raspberry Pi,
+* System on a chip (SOC), Broadcom BCM2710A1, quad-core 64-bit ARM Cortex A53, and 512MB SDRAM
+* BCM2836 Arm-local peripherals, ARM Quad A7 core [PDF](https://pip-assets.raspberrypi.com/categories/506-raspberry-pi-2-model-b/documents/RP-008250-DS-1-bcm2836-peripherals.pdf), Raspberry Pi, applies also to BCM2837 and RP3A0
+* Arm Cortex-A53 MPCore Processor Technical Reference Manual [WS](https://developer.arm.com/documentation/ddi0500/latest/), ARM, 
+* ...
 
 ## Status
 TODO
@@ -23,8 +29,6 @@ DONE
 
 Deprecated
 * WiringPi
-
-To check viability
 * bcm2835
 
 ## References
