@@ -36,13 +36,13 @@ TODO
 * <todo: consider, read the ncsc supply chain security and SBoM content, at least it is logged as an concern, keep under review, security sec part of DevSecOps, necessary but feels like homework, concern of the chief security officer CSO specifically, concern of many generally to be aware of, toward vulnerability scanning automation workflow to be determined and documented elsewhere in automation repo, >
 * <todo: consider, add link to EU Cybersecurity Regulation, more homework, read?, do first scan of headings and exec summary, >
 * <todo: consider, install raspi-config on Ubuntu Core for Raspberry Pi, would require a raspi-config snap, does raspi-config snap exist? primarily useful for GPIO and interface configurations, but there will be limitations on use like no overclocking due to kernel and lib and other differences, >
-* <todo: consider, RPi Pi controller servos or sensors with Ubuntu core may be too difficult at this time? but hoped for end state, reconsider and prioritise RPi OS for now to speed AGW RnD, Ubuntu Server and Ubuntu Core for production env? Secure env best case would be Ubuntu Core but hurdles are likely large at this time, >
-* <todo: consider, Ubuntu Launchpad, how can this expidite development for Ubuntu Core on RPi SBC's >
+* <todo: consider, Ubuntu Launchpad, how can this expidite development for Ubuntu Core on RPi SBC's and for AGW projects, AGW projects might have targets other than RPi SBC's, >
 
 DONE
 * <done: consider, intent to commit, >
 * <done: consider, create skelleton outline of activities and tasks to complete for worklfow. >
 * <done: consider, try pre built image, core24, should try again for practice, successfully copied to MicroSD Card, configured via serial connection to RPi Z2W, connected via Ubuntu One SSH subsequently, not rigoursly tested core24 on RPI Z2W, no problems at present 7 May 2026, activities to date; logon via One SSH, query Zero hardware, >
+* <done: consider, RPi Pi controller servos or sensors with Ubuntu core may be too difficult at this time? but hoped for end state, reconsider and prioritise RPi OS for now to speed AGW RnD, Ubuntu Server and Ubuntu Core for production env? Secure prod env best case would be Ubuntu Core but hurdles are likely large at this time, yes! This is two seperate objectives; (1) Understand Ubunut Core IoT deployments and build inclusive thrid pary snaps like AGW snaps, (2) get BMV sensor working on RPi OS Trixi Lite in first instance using RPi Z 2 W GPIO with C/Cpp code base see the Bosch example code cross compile on Ubuntu Desktop dev env and deploy to RPi OS Trixi Lite, both project streams can run in parallel! Good job! >
 
 ## Output - workflow - create AGW Ubuntu Core image for install on embedded device
 Things to do to compile and deploy to Ubuntu Core
