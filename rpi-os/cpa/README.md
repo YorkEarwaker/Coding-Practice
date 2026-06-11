@@ -25,10 +25,21 @@ Objectives
 TODO
 * <todo: consider, first RPi OS gipo C++ for ISP and I2C, getting this working first before attempting Ubuntu Core deployment, >
 * <todo: consider, identify C/C++ libraries for RPi OS GPIO access, >
-* <todo: consider, ask question in Raspberry Pi Forum, re processor agnostic and kernel agnostic library of GPIO, set expectations for requirement, outline different leaning objectives >
+* <todo: consider, ask question in Raspberry Pi Forum, re processor agnostic and kernel agnostic library for GPIO, set expectations for requirement, outline different leaning objectives >
 
 DONE
 * <done: consider, intent to commit>
+
+## Output
+Cross compilation tool chain Dell Intel Ubuntu Desktop 24 development environment for deployment to SBC device Raspberry Pi Zero 2 W running the Raspberry Pi OS Trixi Lite .
+
+### Install cross compile toolchain
+
+### Configure CMake for cross compilation
+
+### Build and deploy
+
+
 
 ## Libs
 
