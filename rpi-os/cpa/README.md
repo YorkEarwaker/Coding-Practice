@@ -1,6 +1,6 @@
 # C Cpp ASM cpa
 
-RPi SBC's with RPi OS using C/C++ code base, .
+RPi SBC's with RPi OS using C/C++ code base, . 
 
 ## Notes
 
@@ -20,6 +20,7 @@ Targets
 Objectives
 * Cross compile toolchain, dev env Ubuntu Desktop deployment env RPi SBC running RPi OS e.g. (RPi Z 2 W running Trixi Lite)
 * Cross compile Bosch BMV sensor C/Cpp code for deployment to RPi Z 2 W running Trixi Lite
+* Rapid application development RAD, 
 
 ## Status
 TODO
@@ -31,25 +32,42 @@ DONE
 * <done: consider, intent to commit>
 
 ## Output
+
+### Target - RPi Z 2 W device RPi OS Trixi Lite
 Cross compilation tool chain Dell Intel Ubuntu Desktop 24 development environment for deployment to SBC device Raspberry Pi Zero 2 W running the Raspberry Pi OS Trixi Lite .
 
-### Install cross compile toolchain
+Prerequisites
+* container or hypervisor, likely yes to isolate build system from host system
+* <todo: consider, investigate pre made build containers, docker, lxd, lxm? trusted source only, rad, >
+* <todo: consider, investigate pre made build virtual machines, maax? >
+
+#### Install cross compile toolchain
+Requirements
+* compiler, armv8, 64bit
+* sysroot, libs (catalogue list elsewhere? )
+* ...? tbd
 
 ```
 
 ```
 
-### Configure CMake for cross compilation
+#### Configure CMake for cross compilation
+Requirements
+* CMake file
 
+Create the CMake text file 
 ```
 $ touch rpi-z-2-w.cmake
 ```
 
-### Build and deploy
+#### Build and deploy
 
 ```
 
 ```
+
+### Target - RPi 5 device RPi OS ...?
+TBD
 
 ## Libs
 
@@ -69,4 +87,8 @@ News Papers - C/C++, libs
 * How do I program a Sensor with C and no TP libraries, [WS](https://forums.raspberrypi.com/viewtopic.php?t=255741), 31 Oct 2019, Raspberry Pi Forums, 
 * ...
 
-
+News Papers - cross compilation
+* C/C++ [WS](https://forums.raspberrypi.com/viewforum.php?f=33&sid=6368c5be43ce8f76bd0561fe60e6517c), RPi Forums
+* Cross platform build project for RPi Zero W ... [WS](https://forums.raspberrypi.com/viewtopic.php?t=336678), 28 Jun 2022, RPi Forums
+* crosscompile for 32 bit armhf (RPi4) ABI-compatibility armv6/v7 [WS](https://forums.raspberrypi.com/viewtopic.php?t=396843&sid=3d14a33149444f0e0fac627492fad734), 13 Mar 2026, RPi Forums
+* 
