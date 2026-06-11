@@ -35,11 +35,21 @@ Cross compilation tool chain Dell Intel Ubuntu Desktop 24 development environmen
 
 ### Install cross compile toolchain
 
+```
+
+```
+
 ### Configure CMake for cross compilation
+
+```
+$ touch rpi-z-2-w.cmake
+```
 
 ### Build and deploy
 
+```
 
+```
 
 ## Libs
 
