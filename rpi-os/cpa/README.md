@@ -39,8 +39,9 @@ Cross compilation tool chain Dell Intel Ubuntu Desktop 24 development environmen
 Prerequisites
 * MicroSD card with RPi OS Trixi Lite 32bit or 64bit instance installed, 
 * 32bit or 64bit depending on use case, and other functional and non functional requirements, 
-* 32bit OS Lite (with 32bit apps) better performance with minimal 512MB SDRAM onboard RPiZ2W, free 334MB
-* 64bit OS Lite (with 64bit apps) only slightly poorer performance 512MB SDRAM onboard RPi02W, free 289MB
+* 32bit OS Lite (with 32bit apps) better ram performance with minimal 512MB SDRAM onboard RPiZ2W, free 334MB
+* 64bit OS Lite (with 64bit apps) only slightly poorer ram performance 512MB SDRAM onboard RPi02W, free 289MB
+* 64bit OS offers specific improved performance including; optimises calculation performance, uses address space more efficiently
 * 64bit configure to use Overlay File System to protect card from damage due to swap i/o, write protect the boot partition, also 32bit?
 * Lite, headless, no desktop so better performance with minimal 512MB SDRAM onboard RpiZ2W, 
 * RPi OS configured to use ssh for login, raspi-config
