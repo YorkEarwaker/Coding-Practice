@@ -39,11 +39,12 @@ Cross compilation tool chain Dell Intel Ubuntu Desktop 24 development environmen
 Prerequisites
 * MicroSD card with RPi OS Trixi Lite 32bit or 64bit instance installed, 
 * 32bit or 64bit depending on use case, and other functional and non functional requirements, 
-* 32bit OS Lite with 32bit apps better performance with minimal 512MB SDRAM onboard RPiZ2W, free 334
-* 64bit OS Lite with 64bit apps only slightly poorer performance 512MB SDRAM onboard RPi02W, free 289
+* 32bit OS Lite (with 32bit apps) better performance with minimal 512MB SDRAM onboard RPiZ2W, free 334MB
+* 64bit OS Lite (with 64bit apps) only slightly poorer performance 512MB SDRAM onboard RPi02W, free 289MB
 * 64bit configure to use Overlay File System to protect card from damage due to swap i/o, write protect the boot partition, also 32bit?
 * Lite, headless, no desktop so better performance with minimal 512MB SDRAM onboard RpiZ2W, 
 * RPi OS configured to use ssh for login, raspi-config
+* <todo: consider, if must use 64bit desktop then have to use SD card swap space, investigate replacing rpi-os dphys-swapfile with the traditional Linux swap mechanism, allocate min 2gig upto 6gig more? for swap space, but this will conflict with Overlay File System suggestion above, reducing lifetime of sd card >
 * container or hypervisor, likely yes to isolate build system from host system
 * <todo: consider, investigate pre made build containers, docker, lxd, lxm? trusted source only, rad, >
 * <todo: consider, investigate pre made build virtual machines, maax? >
@@ -103,3 +104,4 @@ News Papers - cross compilation
 News Papers - RPi OS version for RPi-0-2-W (02W) 
 * Os version suggested for Pi Zero 2 W, [WS](https://forums.raspberrypi.com/viewtopic.php?t=346950), 5 Feb 2023, Raspberry Pi Forums,
 * Install 64 bit OS on Raspberry Pi zero 2 W [WS](https://qengineering.eu/install-64-os-on-raspberry-pi-zero-2.html), 14 February 2022 (updated), Q-Engineering, 
+* 32 or 64bit OS for Zero 2w and Motion [WS](https://forums.raspberrypi.com/viewtopic.php?t=356688), 22 Sep 2023, Raspberry Pi Forums
