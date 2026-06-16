@@ -8,6 +8,9 @@ Concerns
 * Difficulties getting started due to lack of official documentation.
 * Likely due to keeping learning pathways open and not prescribing boiler plate solutions. 
 * The learning is in the do, try, fail, to success in incremental wins
+* RPi corporate interests drive some sub-optimal outcomes, what are these precisely?
+* RPi Forums represent RPi corporate interests, how much is this the case?
+* ...
 
 Targets
 * Initial target SBC architecture, RPi Z 2 W [WS](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/), News [WS](https://www.raspberrypi.com/news/new-raspberry-pi-zero-2-w-2/), Raspberry Pi,
@@ -27,6 +30,7 @@ TODO
 * <todo: consider, first RPi OS gipo C++ for ISP and I2C, getting this working first before attempting Ubuntu Core deployment, >
 * <todo: consider, identify C/C++ libraries for RPi OS GPIO access, >
 * <todo: consider, ask question in Raspberry Pi Forum, re processor agnostic and kernel agnostic library for GPIO, set expectations for requirement, outline different leaning objectives >
+* <todo: consider, does Boost compromise security? are any of these hardended? would it pass SBoM requirements? Ubunutu does not have latest versions, for latest versions download source and compile libs, >
 
 DONE
 * <done: consider, intent to commit>
@@ -42,7 +46,7 @@ Prerequisites
 * 32bit OS Lite (with 32bit apps) better ram performance with minimal 512MB SDRAM onboard RPiZ2W, free 334MB
 * 64bit OS Lite (with 64bit apps) only slightly poorer ram performance 512MB SDRAM onboard RPi02W, free 289MB
 * 64bit OS offers specific improved performance including; optimises calculation performance, uses address space more efficiently
-* 64bit configure to use Overlay File System to protect card from damage due to swap i/o, write protect the boot partition, also 32bit?
+* 64bit configure to use Overlay File System to protect card from damage due to swap i/o, write protect the boot partition, hardening for production. also 32bit? yes.
 * Lite, headless, no desktop so better performance with minimal 512MB SDRAM onboard RpiZ2W, 
 * RPi OS configured to use ssh for login, raspi-config
 * <todo: consider, if must use 64bit desktop then have to use SD card swap space, investigate replacing rpi-os dphys-swapfile with the traditional Linux swap mechanism, allocate min 2gig upto 6gig more? for swap space, but this will conflict with Overlay File System suggestion above, reducing lifetime of sd card >
@@ -86,6 +90,36 @@ Deprecated
 * WiringPi
 * bcm2835
 
+### Standard C++
+
+* Standard C++ [WS](https://isocpp.org/), ISO, 
+* C++ Standard Library [WS](https://en.cppreference.com/cpp/standard_library) cppreference .com, 
+
+<todo: consider, moving the links below this line to another location, >
+
+### Toolchains
+
+* Toolchains, [WS](https://www.toolchains.net/)
+* ...
+
+Courses
+* Cpp Introduction, [WS](https://learning.rc.virginia.edu/courses/cpp-introduction/), University of Virginia
+* <todo: consider, source similar introductions from UK universities, >
+
+### Utilities - helpers, productivity, accelerators, add-on's, numerical and scientific computing, 
+Which of the long list of frameworks and utilities are a good fit for RPi? Evaluate some.
+
+* Boost org [WS](https://www.boost.org/) ubuntu luanchpad [WS](https://launchpad.net/~boost-latest), a de facto extension to the C++ Standard Library
+* Crow, org [WS](https://crowcpp.org/master/), open collective (crowd funding) [WS](https://opencollective.com/crow), web services using http and websockts, uses Boost lib,
+* Dragon, org ?
+* ...
+
+Lists 
+* Awesome Cpp [GH](https://github.com/fffaraz/awesome-cpp), Faraz, CA, US, curated list of cpp utilities frameworks and so on
+* Awesome Modern Cpp [GH](https://github.com/rigtorp/awesome-modern-cpp), [WS](https://awesomecpp.com/), 
+* C++ Tools Ecosystem [WS](https://hackingcpp.com/cpp/tools/ecosystem), h/cpp, 
+* List of C++ software and tools, [WP](https://en.wikipedia.org/wiki/List_of_C++_software_and_tools), 
+
 ## References
 
 News Papers - C/C++, libs
@@ -100,9 +134,11 @@ News Papers - cross compilation
 * C/C++ [WS](https://forums.raspberrypi.com/viewforum.php?f=33&sid=6368c5be43ce8f76bd0561fe60e6517c), RPi Forums
 * Cross platform build project for RPi Zero W ... [WS](https://forums.raspberrypi.com/viewtopic.php?t=336678), 28 Jun 2022, RPi Forums
 * crosscompile for 32 bit armhf (RPi4) ABI-compatibility armv6/v7 [WS](https://forums.raspberrypi.com/viewtopic.php?t=396843&sid=3d14a33149444f0e0fac627492fad734), 13 Mar 2026, RPi Forums
+* Cross-Compiling for Raspberry Pi: Getting Started and Troubleshooting [WS](https://earthly.dev/blog/cross-compiling-raspberry-pi/), 19 July 2023 (updated), Aniket Bhattacharyea
 * ...
 
 News Papers - RPi OS version for RPi-0-2-W (02W) 
+* Raspberry Pi OS (64-bit) [WS](https://www.raspberrypi.com/news/raspberry-pi-os-64-bit/), 2 Feb 2022, Gordon Hollingworth, Raspberry Pi, News
 * Os version suggested for Pi Zero 2 W, [WS](https://forums.raspberrypi.com/viewtopic.php?t=346950), 5 Feb 2023, Raspberry Pi Forums,
 * Install 64 bit OS on Raspberry Pi zero 2 W [WS](https://qengineering.eu/install-64-os-on-raspberry-pi-zero-2.html), 14 February 2022 (updated), Q-Engineering, 
 * 32 or 64bit OS for Zero 2w and Motion [WS](https://forums.raspberrypi.com/viewtopic.php?t=356688), 22 Sep 2023, Raspberry Pi Forums
