@@ -27,6 +27,11 @@ Objectives
 
 ## Status
 TODO
+* <todo: consider, first instance, hello world cross compile for target rpi os Trixi on rpi z2w from ubuntu desktop 24 dev env, >
+* <todo: consider, simple C++ for devie like DHT22 temperature sensor, link to specific electrical engineering project /een/snr-? , already achieved with micro python>
+* <todo: consider, simple C++ for devie like Bosche temperature sensor, bit more complex than DHT22, link to specific electrical engineering project /een/snr-? already achieved with micro python >
+* <todo: consider, entry C++ for device like Bosche BMV080 particulate matter sensor, hello world first contact equivalent >
+* <todo: consider, entry C++ system of systems, Bosche temp sensor + Bosche BMV080 pms, + small screen device? >
 * <todo: consider, first RPi OS gipo C++ for ISP and I2C, getting this working first before attempting Ubuntu Core deployment, >
 * <todo: consider, identify C/C++ libraries for RPi OS GPIO access, >
 * <todo: consider, ask question in Raspberry Pi Forum, re processor agnostic and kernel agnostic library for GPIO, set expectations for requirement, outline different leaning objectives >
@@ -97,16 +102,7 @@ Deprecated
 
 <todo: consider, moving the links below this line to another location, >
 
-### Toolchains
-
-* Toolchains, [WS](https://www.toolchains.net/)
-* ...
-
-Courses
-* Cpp Introduction, [WS](https://learning.rc.virginia.edu/courses/cpp-introduction/), University of Virginia
-* <todo: consider, source similar introductions from UK universities, >
-
-### Utilities - helpers, productivity, accelerators, add-on's, numerical and scientific computing, 
+### Third party - utilities, helpers, productivity, accelerators, add-on's, numerical and scientific computing, 
 Which of the long list of frameworks and utilities are a good fit for RPi? Evaluate some.
 
 * Boost org [WS](https://www.boost.org/) ubuntu luanchpad [WS](https://launchpad.net/~boost-latest), a de facto extension to the C++ Standard Library
@@ -119,6 +115,15 @@ Lists
 * Awesome Modern Cpp [GH](https://github.com/rigtorp/awesome-modern-cpp), [WS](https://awesomecpp.com/), 
 * C++ Tools Ecosystem [WS](https://hackingcpp.com/cpp/tools/ecosystem), h/cpp, 
 * List of C++ software and tools, [WP](https://en.wikipedia.org/wiki/List_of_C++_software_and_tools), 
+
+### Toolchains
+
+* Toolchains, [WS](https://www.toolchains.net/)
+* ...
+
+Courses
+* Cpp Introduction, [WS](https://learning.rc.virginia.edu/courses/cpp-introduction/), University of Virginia
+* <todo: consider, source similar introductions from UK universities, >
 
 ## References
 
@@ -134,7 +139,7 @@ News Papers - cross compilation
 * C/C++ [WS](https://forums.raspberrypi.com/viewforum.php?f=33&sid=6368c5be43ce8f76bd0561fe60e6517c), RPi Forums
 * Cross platform build project for RPi Zero W ... [WS](https://forums.raspberrypi.com/viewtopic.php?t=336678), 28 Jun 2022, RPi Forums
 * crosscompile for 32 bit armhf (RPi4) ABI-compatibility armv6/v7 [WS](https://forums.raspberrypi.com/viewtopic.php?t=396843&sid=3d14a33149444f0e0fac627492fad734), 13 Mar 2026, RPi Forums
-* Cross-Compiling for Raspberry Pi: Getting Started and Troubleshooting [WS](https://earthly.dev/blog/cross-compiling-raspberry-pi/), 19 July 2023 (updated), Aniket Bhattacharyea
+* Cross-Compiling for Raspberry Pi: Getting Started and Troubleshooting [WS](https://earthly.dev/blog/cross-compiling-raspberry-pi/), 19 July 2023 (updated), Aniket Bhattacharyea, Earthly
 * ...
 
 News Papers - RPi OS version for RPi-0-2-W (02W) 
