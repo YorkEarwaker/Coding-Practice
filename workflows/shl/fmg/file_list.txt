@@ -109,5 +109,3 @@ rpi-z/cpa/snr-rsl/src/org/agw/een/snr/rsl/rsl_bmv080_drv.c
 rpi-z/cpa/ssd/README.md
 rpi-z/mpy/README.md
 rpi-z/rst/README.md
-
-
