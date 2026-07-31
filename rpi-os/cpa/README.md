@@ -65,9 +65,59 @@ Requirements
 * sysroot, libs (catalogue list elsewhere? )
 * ...? tbd
 
+download tool chain for ARMv8
+```
+$ sudo apt update
+$ sudo apt install gcc-aarchi64-linux-gnu g++-aarch64-linux-gnu
 ```
 
+create the c file
 ```
+$ touch hello_rpiziiw.c
+```
+
+use preferred text editor to enter code into c class file and save
+* to use nano on in cli; `$ nano hello_rpiziiw.c`
+```
+// C
+# include <stdio.h>
+
+int main() {
+  printf("Hello from Raspberry Pi Zero 2 W! First contact, C cross compile");
+  return 0;
+}
+```
+
+compile from cli
+* target the A53-Cortex core
+```
+$ aarch64-linux-gnu-gcc -mcpu=cortex-a53+fp+simd -o hello_rpiziiw_c hello_rpiziiw.c
+```
+
+
+repeat again but for a c++ hello world instance
+```
+$ touch hello_rpiziiw.cpp
+```
+
+use preferred text editor to enter code for c++ file
+```
+// C++
+# include <iostream>
+
+int main() {
+  std::out << "Hello from Raspberry Pi Zero 2 W! First contact, C++ cross comile";
+  return 0;
+}
+```
+
+compile from cli
+* target the A53-Cortex core
+```
+$ aarch64-linux-gnu-g++ -mcpu=cortex-a53+fp+simd - hello_rpiziiw_cpp hello_rpiziiw.cpp
+```
+
+
 
 #### Configure CMake for cross compilation
 Requirements
@@ -75,7 +125,7 @@ Requirements
 
 Create the CMake text file 
 ```
-$ touch rpi-z-2-w.cmake
+$ touch CMakeLists.txt
 ```
 
 #### Build and deploy
