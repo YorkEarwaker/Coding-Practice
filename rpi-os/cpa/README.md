@@ -36,6 +36,7 @@ TODO
 * <todo: consider, identify C/C++ libraries for RPi OS GPIO access, >
 * <todo: consider, ask question in Raspberry Pi Forum, re processor agnostic and kernel agnostic library for GPIO, set expectations for requirement, outline different leaning objectives >
 * <todo: consider, does Boost compromise security? are any of these hardended? would it pass SBoM requirements? Ubunutu does not have latest versions, for latest versions download source and compile libs, >
+* <todo: consider, move some of the output section to a /hwd/README.md >
 
 DONE
 * <done: consider, intent to commit>
@@ -73,11 +74,11 @@ $ sudo apt install gcc-aarchi64-linux-gnu g++-aarch64-linux-gnu
 
 create the c file
 ```
-$ touch hello_rpiziiw.c
+$ touch hwd/hello_rpiziiw.c
 ```
 
 use preferred text editor to enter code into c class file and save
-* to use nano on in cli; `$ nano hello_rpiziiw.c`
+* to use nano on cli; `$ nano hwd/hello_rpiziiw.c`
 ```
 // C
 # include <stdio.h>
@@ -91,22 +92,22 @@ int main() {
 compile from cli
 * target the A53-Cortex core
 ```
-$ aarch64-linux-gnu-gcc -mcpu=cortex-a53+fp+simd -o hello_rpiziiw_c hello_rpiziiw.c
+$ aarch64-linux-gnu-gcc -mcpu=cortex-a53+fp+simd -o hwd/hello_rpiziiw_c hwd/hello_rpiziiw.c
 ```
-
 
 repeat again but for a c++ hello world instance
 ```
-$ touch hello_rpiziiw.cpp
+$ touch hwd/hello_rpiziiw.cpp
 ```
 
-use preferred text editor to enter code for c++ file
+use preferred text editor to enter code for c++ file and save
+* to use nano on cli; `$ nano hwd/hello_rpiziiw.cpp` 
 ```
 // C++
 # include <iostream>
 
 int main() {
-  std::out << "Hello from Raspberry Pi Zero 2 W! First contact, C++ cross comile";
+  std::cout << "Hello from Raspberry Pi Zero 2 W! First contact, C++ cross comile";
   return 0;
 }
 ```
@@ -114,10 +115,8 @@ int main() {
 compile from cli
 * target the A53-Cortex core
 ```
-$ aarch64-linux-gnu-g++ -mcpu=cortex-a53+fp+simd - hello_rpiziiw_cpp hello_rpiziiw.cpp
+$ aarch64-linux-gnu-g++ -mcpu=cortex-a53+fp+simd -o hwd/hello_rpiziiw_cpp hwd/hello_rpiziiw.cpp
 ```
-
-
 
 #### Configure CMake for cross compilation
 Requirements
@@ -125,13 +124,15 @@ Requirements
 
 Create the CMake text file 
 ```
-$ touch CMakeLists.txt
+$ touch hwd/CMakeLists.txt
 ```
 
 #### Build and deploy
 
+not tested or used. tobe verified. wip
 ```
-
+scp hello pi@<raspberry_pi_ip>:~
+ssh pi@<raspberry_pi_ip> "./hello"   
 ```
 
 ### Target - RPi 5 device RPi OS ...?
