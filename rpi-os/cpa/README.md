@@ -62,15 +62,15 @@ Prerequisites
 
 #### Install cross compile toolchain
 Status; Success! :)
-* <info: consider, the gnu arm libraries won't harm the linus distro install so it is okay in this simple case to load them into default locations>
-* <todo: consider, determine default install locations for gnu are libs, >
+* <info: consider, the gnu arm libraries won't harm the linux distro OS install so it is okay in this simple case to load them into default locations>
+* <todo: consider, determine default install locations for gnu arm libs, >
 * <todo: consider, another project to craete a container sandbox to load gnu arm libs into for self contained dev env on dev box, might require a vm>
 
 Requirements
 * compiler, armv8, 64bit
-* ...? tbd
+* compiler, armv8, 32bit? tbd
 
-download tool chain for ARMv8
+download tool chain for ARMv8 64bit architecture
 ```
 $ sudo apt update
 $ sudo apt install gcc-aarchi64-linux-gnu g++-aarch64-linux-gnu
@@ -83,11 +83,11 @@ Status; Success! :)
 
 create the c file
 ```
-$ touch hwd/hello_rpiziiw.c
+$ touch hwd_x/hello_rpiziiw.c
 ```
 
 use preferred text editor to enter code into c class file and save
-* to use nano on cli; `$ nano hwd/hello_rpiziiw.c`
+* to use nano on cli; `$ nano hwd_x/hello_rpiziiw.c`
 ```
 // C
 # include <stdio.h>
@@ -101,16 +101,16 @@ int main() {
 compile from cli
 * target the A53-Cortex core
 ```
-$ aarch64-linux-gnu-gcc -mcpu=cortex-a53+fp+simd -o hwd/hello_rpiziiw_c hwd/hello_rpiziiw.c
+$ aarch64-linux-gnu-gcc -mcpu=cortex-a53+fp+simd -o hwd_x/hello_rpiziiw_c hwd_x/hello_rpiziiw.c
 ```
 
 repeat again but for a c++ hello world instance
 ```
-$ touch hwd/hello_rpiziiw.cpp
+$ touch hwd_x/hello_rpiziiw.cpp
 ```
 
 use preferred text editor to enter code for c++ file and save
-* to use nano on cli; `$ nano hwd/hello_rpiziiw.cpp` 
+* to use nano on cli; `$ nano hwd_x/hello_rpiziiw.cpp` 
 ```
 // C++
 # include <iostream>
@@ -124,12 +124,12 @@ int main() {
 compile from cli
 * target the A53-Cortex core
 ```
-$ aarch64-linux-gnu-g++ -mcpu=cortex-a53+fp+simd -o hwd/hello_rpiziiw_cpp hwd/hello_rpiziiw.cpp
+$ aarch64-linux-gnu-g++ -mcpu=cortex-a53+fp+simd -o hwd_x/hello_rpiziiw_cpp hwd_x/hello_rpiziiw.cpp
 ```
 
 #### Do some GPIO hello world thing tbc
 Status: TBD, 
-* <todo: consider, some secondary project so as not to clutter this hwd-x example, say i2c-x or spi-x or uart-x or similar? >
+* <todo: consider, some secondary project so as not to clutter this hwd_x example, say i2c_x or spi_x or uart-x or similar? >
 * sysroot, libs (catalogue list elsewhere? ), necessary for GPIO I2C SPI etc 
 
 #### Configure CMake for cross compilation
@@ -141,7 +141,7 @@ Requirements
 
 Create the CMake text file 
 ```
-$ touch hwd/CMakeLists.txt
+$ touch hwd_x/CMakeLists.txt
 ```
 
 CMakeLists.txt file contents
