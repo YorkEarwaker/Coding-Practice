@@ -61,9 +61,13 @@ Prerequisites
 * <todo: consider, investigate pre made build virtual machines, maax? >
 
 #### Install cross compile toolchain
+Status; Success! :)
+* <info: consider, the gnu arm libraries won't harm the linus distro install so it is okay in this simple case to load them into default locations>
+* <todo: consider, determine default install locations for gnu are libs, >
+* <todo: consider, another project to craete a container sandbox to load gnu arm libs into for self contained dev env on dev box, might require a vm>
+
 Requirements
 * compiler, armv8, 64bit
-* sysroot, libs (catalogue list elsewhere? )
 * ...? tbd
 
 download tool chain for ARMv8
@@ -71,6 +75,11 @@ download tool chain for ARMv8
 $ sudo apt update
 $ sudo apt install gcc-aarchi64-linux-gnu g++-aarch64-linux-gnu
 ```
+#### Create hello world files
+Status; Success! :)
+* create file
+* write code
+* compile code
 
 create the c file
 ```
@@ -118,7 +127,15 @@ compile from cli
 $ aarch64-linux-gnu-g++ -mcpu=cortex-a53+fp+simd -o hwd/hello_rpiziiw_cpp hwd/hello_rpiziiw.cpp
 ```
 
+#### Do some GPIO hello world thing tbc
+Status: TBD, 
+* <todo: consider, some secondary project so as not to clutter this hwd-x example, say i2c-x or spi-x or uart-x or similar? >
+* sysroot, libs (catalogue list elsewhere? ), necessary for GPIO I2C SPI etc 
+
 #### Configure CMake for cross compilation
+Status: TBD
+* <todo: consider, first test with this CMakeLists.txt file and iron out any errors, >
+
 Requirements
 * CMake file
 
@@ -127,7 +144,16 @@ Create the CMake text file
 $ touch hwd/CMakeLists.txt
 ```
 
+CMakeLists.txt file contents
+```
+tbd
+```
+
+
+
 #### Build and deploy
+Status: TBD
+* <todo: consider, likely requires further setup of RPi Z 2 W for ssh over wifi >
 
 not tested or used. tobe verified. wip
 ```
@@ -135,8 +161,20 @@ scp hello pi@<raspberry_pi_ip>:~
 ssh pi@<raspberry_pi_ip> "./hello"   
 ```
 
+#### Test hwd files on different OS
+Status: TBD
+* Start multi path compile and deployment for different targets 
+* Run hello world files on RPi OS Trixi Lite (headless) on SBC RPi Z2W
+* Run hellow world file on Ubuntu server (headless by default) on SBC RPi Z2W
+* <todo: consider, testing on Ubuntu server is a step toward pipeline to Ubuntu core >
+* <todo: consider, other RPi MCU and SBC hardware >
+* <todo: consider, other hardware like Arduino, ESP32, ... >
+* <todo: consider, unit test, as seperate step beuilding on this?>
+* <todo: consider, docs generation, as seperate step building on this?>
+
+
 ### Target - RPi 5 device RPi OS ...?
-TBD
+Status: TBD
 
 ## Libs
 
