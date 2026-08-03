@@ -129,7 +129,7 @@ $ aarch64-linux-gnu-g++ -mcpu=cortex-a53+fp+simd -o hwd_x/hello_rpiziiw_cpp hwd_
 
 #### Do some GPIO hello world thing tbc
 Status: TBD, 
-* <todo: consider, some secondary project so as not to clutter this hwd_x example, say i2c_x or spi_x or uart-x or similar? >
+* <todo: consider, some secondary project so as not to clutter this hwd_x example, say i2c_x or spi_x or uart_x or similar? >
 * sysroot, libs (catalogue list elsewhere? ), necessary for GPIO I2C SPI etc 
 
 #### Configure CMake for cross compilation
@@ -172,6 +172,36 @@ Status: TBD
 * <todo: consider, unit test, as seperate step beuilding on this?>
 * <todo: consider, docs generation, as seperate step building on this?>
 
+Run hello world files on RPi OS Trixi Lite (headless) on SBC RPi Z2W 
+* Status; Success! :)
+* Copy files to MicroSD card /rootfs/home/
+* Connect to RPi Z 2 W
+* Test files cross compiled on Ubuntu Desktop dev environment
+* Execute the compiled C and C++ files on RPi Z 2 W
+```
+york-earwaker@raspberrypi:~/dev/repo/coding-practice/rpi-os/cpa$ ./hwd_x/hello_repiziiw_c
+Hello from Raspberry Pi Zero 2 W! First contact, C cross compile.
+york-earwaker@raspberrypi:~/dev/repo/coding-practice/rpi-os/cpa$ ./hwd_x/hello_repiziiw_cpp
+Hello from Raspberry Pi Zero 2 W! First contact, C++ cross compile.
+york-earwaker@raspberrypi:~/dev/repo/coding-practice/rpi-os/cpa$ 
+```
+
+Run hellow world file on Ubuntu server (headless by default) on SBC RPi Z2W
+* Status; TBD
+```
+TBD
+```
+
+Trouble shooting
+* If you can't exceute the files check if the execute permission was set
+* 755 reports it is executable, as below
+* 644 reports it is not executable
+```
+york-earwaker@raspberrypi:~/dev/repo/coding-practice/rpi-os/cpa$ stat -c '%a' hwd_x/hello_repiziiw_c
+775
+```
+
+* <todo: consider, cli to make file executable here>
 
 ### Target - RPi 5 device RPi OS ...?
 Status: TBD
