@@ -15,7 +15,12 @@ TODO
 * <todo; consider, reearach CHERI iot initiative >
 * <todo; consider, reearch CHERI Rust initiative >
 * <todp; consider, monitor release of COTS SoC's and chip sets from retailers for MCU and SBC>
-* <todo: sondier, MCU microcontroller RISC-V board for evaluation and compiler tool chain>
+* <todo: consider, MCU microcontroller RISC-V board for evaluation and compiler tool chain>
+* <todo: consider, is MTE or equivalent avaiable for the RISC-V architecture,  >
+
+DOME
+* <done: consider, intent to commit>
+* <done; consider, strategic direction for AGW project, uk eu sovereign digital supply chains, IC design, IC fab, >
 
 ## References
 
