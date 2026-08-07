@@ -19,7 +19,7 @@ TODO
 
 ## References
 
-* CHERI
+* CHERI, [WS](https://ctsrd-cheri.github.io/cheribsd-getting-started/)
 * ARM MTE
 * Rust
 * Clang/LLVM
