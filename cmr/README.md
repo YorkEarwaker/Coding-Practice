@@ -4,9 +4,10 @@ stub
 
 ## Notes
 
-CHERI, preventative, for RISC-V, ARM, integrated circuits and SoC's
-ARM MTE, execution, runtime checks, as debug/support/maintenance flag
-Rust, proactive, programming code, 
+Objectives
+* CHERI, preventative, for RISC-V, ARM, integrated circuits and SoC's
+* ARM MTE, execution, runtime checks, as debug/support/maintenance flag
+* Rust, proactive, programming code, 
 
 ## Status
 TODO
