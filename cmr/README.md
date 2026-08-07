@@ -15,6 +15,7 @@ TODO
 * <todo; consider, reearach CHERI iot initiative >
 * <todo; consider, reearch CHERI Rust initiative >
 * <todp; consider, monitor release of COTS SoC's and chip sets from retailers for MCU and SBC>
+* <todo: sondier, MCU microcontroller RISC-V board for evaluation and compiler tool chain>
 
 ## References
 
