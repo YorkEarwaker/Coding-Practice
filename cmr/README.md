@@ -9,6 +9,11 @@ Objectives
 * ARM MTE, execution, runtime checks, as debug/support/maintenance flag
 * Rust, proactive, programming code, 
 
+Disambiguation
+* Grey stuff, chips, chiplets, dies, package ceramic containers 
+* Green stuf, printed circuite boards, also sometime differenct colours beige red other,
+ 
+
 ## Status
 TODO
 * <todo: consider, aquire Clang/LLVM and GNU GCC compilers that support CHERI>
@@ -28,14 +33,62 @@ DONE
 
 ## References
 
-* CHERI, [WS](https://ctsrd-cheri.github.io/cheribsd-getting-started/)
-* ARM MTE
-* Rust
-* Clang/LLVM
-* GNU GCC
-* RISC-V
-* ARM
+* CHERI, [WS](https://ctsrd-cheri.github.io/cheribsd-getting-started/), extended instruction set to isolate memory and other code defect errors
+* ARM MTE, runtime emulation? but resource intensive, so not prod bau capablity, 
+* Rust, programming language
+* Clang/LLVM, compiler CHERI instruction set compliant
+* GNU GCC, compitler CHERI instruction set compliant
+* RISC-V, instruction set architecture, open source
+* ARM, instrucction set architecture, proprietry
+* ...
+
+Hybrid chipsets - integrated circet design and manufacture
+* Instruction Set Architecture ISA
+* Chiplet, reusable die, small chip die for system in package SiP, multiple chiplets with differnt functions arranged for different package requirements, half way house between SoC and SiP, 
+* Packaging, integrated circuits 
+* System on Chip SoC, single die, integrating CPU, memory, I/O , all necessary components combined as a single die unit
+* Multipel Chip Module MCM, subsystem, multiple bare dies combined stacked vertically or horizontally side by side encapsulated as a single unit in a common substrate
+* System in Package SiP, multiple dies for multiple discrete chips, some chips might be SoC's, often stacked vertically in a ceramic contaier, of horizontally on pcb,  mix of different manufacturing process, different compound fab's and COTS unti parts into a whole, faster ttm, design flexabilltiy, system of systems, a bit less performant than a SoC, a cmplete system which may also include passive components, antenas, and sensors in the same package a contaier small pcb or ceramic carrier of heterogenous chip sets,
+* System on Module SoM, simpler version of a CoM, printed circuit board pcb, processor + memory/storage, not a single chip SoC or package SiP, 
+* Computer on Module CoM, more complex version of a SoM, printed circuit board pcb, processor + memory/storage, not a single chip SoC or package SiP, more computationa power and features like more processors or FPGSs than SoMs
+* Package on Package PoP, memory packages are stacked directly on processor packages, a discrete SiP kind, 
+* Universal Chiplet Interconnect Express UCIe [WP](https://en.wikipedia.org/wiki/UCIe), standard for integrating multiple dies in horizontal and vertical packaged architecture, at the chiplet ic level not the pcb level, computational speed and energy efficiency, 
+
+Design method
+* Chip down, not a component, design of a pcb soldering processor and memory to board as individual components, not a SoM or CoM module, lowest unit cost and smallest form factor footprint, high volume production, non trivial engineering effort, ttm is longer, upgrading individual components due to small space more difficult, less reuable
+* Application specific standard product ASSP, multiple customers as standard product, COTS, market specific chip design, standard chip for market niche
+* Application specific integrated circuit ASIC, bespoke boutique chip design, custom design, specific application, single function, higher performance and efficienty for task but not flexable general compute, many be a part of a SoC, high efficiency low flexability
+* System on Package SoP, advanced packaging, incorporating capacitors antenas resistors, embedds system components into the package substrate layers, thin film passive components resistors, capcitors high Q inductors, and sometimes active components into wiring layers, substrate a cuircuit board, reduceding set of external components to be mounted on a pcb
+
+
+Fabrication method - manufacturing
+* Silicon on Insulator SoI, reduce parasitic capacitance and improve performance, layered silicon-insulator-silicon
+
+Products - devices IoT, hobyist, education, 
+* Single Board Computer, larger than a SoM or CoM, a complete computer on a single pcb, all system computer components on a single board, 
+* Microcontroller, 
+* Breakout board, 
+* Sensor, 
+
+Products - retail,
+* Laptop
+* Smart phone
+* White goods
+* Consumer appliances
+* ...
+
+Products - service, specialist capability, industrial
+* High performance computing hpc, 
+* Telco, 5g 6g
+* Ai system
+* Automotive
+* Medicine
+* Robotics
+* Space
+* Optics
 * ...
 
 Reports, 
 * The semiconductor industry in the UK,  [WS](https://publications.parliament.uk/pa/cm5803/cmselect/cmbeis/291/report.html), 28 November 2022, Fifth Report of Session 2022–23,  UK gov, 
+
+
