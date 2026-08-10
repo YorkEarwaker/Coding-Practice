@@ -1,18 +1,19 @@
 # CHERI MTE Rust cmr
 
+Memoery safety and secure software, using hardware enabled memory check instruction sets, currently run with overheads in prod and dev, wait for tech to evlov before use, tie in the linux kernel synergies, 
+
 stub
 
 ## Notes
 
 Objectives
-* CHERI, preventative, for RISC-V, ARM, integrated circuits and SoC's
-* ARM MTE, execution, runtime checks, as debug/support/maintenance flag
+* RISC-V CHERI, preventative deterministic, runtime execution, spacial safety, extended ISA for RISC-V, mandatory new base ISA RVY as opposed to integer RVI, Y denotes CHERI die whole, memory overflow prohibition, die ic and SoCs, significant redesign of cores, software rewrites not backward compabile?, 
+* ARM MTE, prevantative probabalistic, runtime execution, temporal safety, extended ISA for ARM, optional no change to base ISA, chip can be ARMv9 compliant and not have MTE die part, memory tag runtime checks, die ic and SoCs, backward compatible C/C++ code?, as debug/support/maintenance flag?
 * Rust, proactive, programming code, 
 
 Disambiguation
-* Grey stuff, chips, chiplets, dies, package ceramic containers 
+* Grey stuff, chips, chiplets, embedded dies, package ceramic containers, silicone and compound substrait
 * Green stuf, printed circuite boards, also sometime differenct colours beige red other,
- 
 
 ## Status
 TODO
@@ -33,8 +34,8 @@ DONE
 
 ## References
 
-* CHERI, [WS](https://ctsrd-cheri.github.io/cheribsd-getting-started/), extended instruction set to isolate memory and other code defect errors
-* ARM MTE, runtime emulation? but resource intensive, so not prod bau capablity, 
+* Capability Hardware Enhanced RISC Instructions CHERI, [WS](https://ctsrd-cheri.github.io/cheribsd-getting-started/), extended instruction set to isolate memory and other code defect errors
+* Memory Tagging Extendion ARM MTE, runtime emulation? but resource intensive, so not prod bau capablity, 
 * Rust, programming language
 * Clang/LLVM, compiler CHERI instruction set compliant
 * GNU GCC, compitler CHERI instruction set compliant
@@ -43,7 +44,7 @@ DONE
 * ...
 
 Hybrid chipsets - integrated circet design and manufacture
-* Instruction Set Architecture ISA
+* Instruction Set Architecture ISA, logcical realized by implementatoin of physical fabrication of die
 * Chiplet, reusable die, small chip die for system in package SiP, multiple chiplets with differnt functions arranged for different package requirements, half way house between SoC and SiP, 
 * Packaging, integrated circuits 
 * System on Chip SoC, single die, integrating CPU, memory, I/O , all necessary components combined as a single die unit
@@ -59,7 +60,11 @@ Design method
 * Application specific standard product ASSP, multiple customers as standard product, COTS, market specific chip design, standard chip for market niche
 * Application specific integrated circuit ASIC, bespoke boutique chip design, custom design, specific application, single function, higher performance and efficienty for task but not flexable general compute, many be a part of a SoC, high efficiency low flexability
 * System on Package SoP, advanced packaging, incorporating capacitors antenas resistors, embedds system components into the package substrate layers, thin film passive components resistors, capcitors high Q inductors, and sometimes active components into wiring layers, substrate a cuircuit board, reduceding set of external components to be mounted on a pcb
-
+* Pointer Authenitcation Code PAC, ARM ISA feature, cryptographic signed pointers to prevent control flow hijacking. Used in combination with MTE.
+* Trusted Excetion Environment TEE, secure part of SoC, ARM TrustZone, RISC-V PMP, to isolate sensitive code, ISA extensions CHERI/MTE improve TEE boundary perimiter safety
+* Physical Memory Protection PMP, RISC-V memory region access standard, pre CHERI security baseline
+* Root of Trust RoT, small ASIC or dedicated core, hareware module in a SoC, part of security chain, RoT is dependency for ISA security features
+* Design for Testability DFT, die design techniques to detect manufacturing defects, not an ISA security feature
 
 Fabrication method - manufacturing
 * Silicon on Insulator SoI, reduce parasitic capacitance and improve performance, layered silicon-insulator-silicon
