@@ -192,7 +192,7 @@ Run hellow world file on Ubuntu server (headless by default) on SBC RPi Z2W
 citizen-developer@ubuntu:~/dev/repo/coding-practice/rpi-os$ dir cpa/hwd_x
 CMakeLists.txt  hello_repiziiw_c    hello_rpiziiw.c
 README.md       hello_repiziiw_cpp  hello_rpiziiw.cpp
-piziiw_cdeveloper@ubuntu:~/dev/repo/coding-practice/rpi-os$ ./cpa/hwd_x/hello_re 
+citizen-developer@ubuntu:~/dev/repo/coding-practice/rpi-os$ ./cpa/hwd_x/hello_repiziiw_c 
 Hello from Raspberry Pi Zero 2 W! First contact, C cross compile.
 citizen-developer@ubuntu:~/dev/repo/coding-practice/rpi-os$ ./cpa/hwd_x/hello_repiziiw_cpp
 Hello from Raspberry Pi Zero 2 W! First contact, C++ cross compile.
