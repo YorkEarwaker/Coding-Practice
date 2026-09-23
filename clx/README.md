@@ -22,6 +22,9 @@ DONE
 ## Libs
 
 * Circuits, [WS](https://latex-cookbook.net/circuits/) latex cookbook
+* CircuitTikZ
+* TikZ/PGP
+* M4 Macros
 * ...
 
 ## References
