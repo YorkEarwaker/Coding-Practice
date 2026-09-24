@@ -1,4 +1,4 @@
-# Circuit LaTeX clx
+# Circuit LaTeX cix
 
 Circuit diagrams in LaTeX,
 
