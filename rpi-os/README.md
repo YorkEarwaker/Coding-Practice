@@ -2,6 +2,10 @@
 
 Development and toolchains for Raspberry Pi OS for RPi SBC's
 
+See also
+* Embedded operating systems for raspberry pi eos-rpi, OS install and confiiguration, [GH](https://github.com/YorkEarwaker/Operating-System/tree/main/eos/eos-rpi#output---os-install-and-confiiguration), List of OS's installed for rpi-z
+* SSH, Networks [GH](https://github.com/YorkEarwaker/Networks/tree/main/ssh), ssh usage, as of 5 October 2026 incomplete
+
 ## Notes
 
 * Faster RnD cycles for AGW project
