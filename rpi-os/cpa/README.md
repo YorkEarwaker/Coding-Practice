@@ -174,8 +174,9 @@ Status: TBD
 
 Run hello world files on RPi OS Trixi Lite (headless) on SBC RPi Z2W 
 * Status; Success! :)
+* First attempt, rationale prove cross compile worked
 * Copy files to MicroSD card /rootfs/home/
-* Connect to RPi Z 2 W
+* Connect to RPi Z 2 W, in this instance via an screen and a serial bridge chip device, not covered here
 * Test files cross compiled on Ubuntu Desktop dev environment
 * Execute the compiled C and C++ files on RPi Z 2 W
 ```
@@ -186,8 +187,70 @@ Hello from Raspberry Pi Zero 2 W! First contact, C++ cross compile.
 york-earwaker@raspberrypi:~/dev/repo/coding-practice/rpi-os/cpa$ 
 ```
 
+Run hello world files on RPi OS Trixi Lite (headless) on SBC RPi Z2W 
+* Status; Success! :)
+* Second attempt, rationale use ~ .ssh/config entry and scp to copy files
+* Open a terminal cli on host
+* ssh into target rpi-z using 
+```
+york-earwaker@york-earwaker-XPS-15-9560:~$ ssh pi-trixie-pms
+citizen-developer@pi-trixie-pms-key's password: 
+Linux raspberrypi 6.18.34+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.18.34-1+rpt1 (2026-06-09) aarch64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Oct  5 13:29:46 2026 from 192.168.1.96
+```
+
+* Create directory structure on target rpi-z into which to copy files from host 
+* shows dir structure once created and that it is empty
+```
+citizen-developer@raspberrypi:~/dev/repo/coding-practice/rpi-os/cpa $ pwd
+/home/citizen-developer/dev/repo/coding-practice/rpi-os/cpa
+citizen-developer@raspberrypi:~/dev/repo/coding-practice/rpi-os/cpa $ dir
+```
+
+* Open a seperate terminal cli on the host machine
+* Copy the files via scp from host to target, scp uses ssh in the background
+* Note scp uses the ~ .ssh/config file name
+```
+york-earwaker@york-earwaker-XPS-15-9560:~$ scp -r /home/york-earwaker/Documents/dev/repo/coding-practice/rpi-os/cpa/. pi-trixie-pms:/home/citizen-developer/dev/repo/coding-practice/rpi-os/cpa
+citizen-developer@pi-trixie-pms-key's password: 
+hello_repiziiw_c                              100%   69KB   1.2MB/s   00:00    
+hello_repiziiw_cpp                            100%   69KB   3.2MB/s   00:00    
+hello_rpiziiw.cpp                             100%  144    30.5KB/s   00:00    
+README.md                                     100%   34     3.4KB/s   00:00    
+hello_rpiziiw.c                               100%  134    36.7KB/s   00:00    
+CMakeLists.txt                                100%  719    51.8KB/s   00:00    
+README.md                                     100%   13KB   1.8MB/s   00:00    
+york-earwaker@york-earwaker-XPS-15-9560:~$ 
+```
+
+* Go to first terminal cli with running ssh session with target rpi-z
+* List the files in the directory to check they have been copied
+* Execute the cross compiled C/C++ files
+```
+citizen-developer@raspberrypi:~/dev/repo/coding-practice/rpi-os $ pwd
+/home/citizen-developer/dev/repo/coding-practice/rpi-os
+citizen-developer@raspberrypi:~/dev/repo/coding-practice/rpi-os $ dir cpa/hwd_x
+CMakeLists.txt	  hello_repiziiw_cpp  hello_rpiziiw.cpp
+hello_repiziiw_c  hello_rpiziiw.c     README.md
+citizen-developer@raspberrypi:~/dev/repo/coding-practice/rpi-os $ ./cpa/hwd_x/hello_repiziiw_c
+Hello from Raspberry Pi Zero 2 W! First contact, C cross compile.
+citizen-developer@raspberrypi:~/dev/repo/coding-practice/rpi-os $ ./cpa/hwd_x/hello_repiziiw_cpp
+Hello from Raspberry Pi Zero 2 W! First contact, C++ cross compile.
+citizen-developer@raspberrypi:~/dev/repo/coding-practice/rpi-os $ 
+```
+
 Run hellow world file on Ubuntu server (headless by default) on SBC RPi Z2W
 * Status; Success! :)
+* Copy files to target, via scp from host or insert MicroSD Card into host and copy
+* Using user citizen-developer logon to rpi-z using ssh
+* Execute cross compiled C/C++ files
 ```
 citizen-developer@ubuntu:~/dev/repo/coding-practice/rpi-os$ dir cpa/hwd_x
 CMakeLists.txt  hello_repiziiw_c    hello_rpiziiw.c
