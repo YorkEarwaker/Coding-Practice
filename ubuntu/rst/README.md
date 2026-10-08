@@ -19,7 +19,12 @@ Targets
 ## DONE
 * <done, consider, intent to commit>
 
-## Installed
+## Libs
+* Rust + Cargo, rust only projects, 
+* Rust + CMake + Corrosion, rust + c/cpp projects, 
+* other tdb ...
+
+Installation - ubuntu dev env
 How to set up a development environment for Rust on Ubuntu, [WS](https://documentation.ubuntu.com/ubuntu-for-developers/howto/rust-setup/)
 
 Not yet installed.
