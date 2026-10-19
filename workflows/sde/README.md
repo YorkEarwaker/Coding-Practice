@@ -11,21 +11,24 @@ Objectives
 TODO
 * <todo: consider, first Rust environment, rust hello world, deploy executable to RPi z2w, Arduino, >
 * <todo: consider, explore how to create a AGW C/C++ env specifically tailored to AGW PMS sensor project, >
-* <todo: consider, other sanbox dev env tools, .venn, ... >
+* <todo: consider, other sanbox dev env tools, Python .venv + pip, ... >
 
 DONE
 * <done: consider, intent to commit >
 
 ## Libs
 
-* LXD [WS](https://canonical.com/lxd/docs/latest/), Ubuntu, required for Workshop, container, 
+* LXD, [WS](https://canonical.com/lxd/docs/latest/), Ubuntu, required for Workshop, system container and virtual machine manager, 
 * Workshop, [WS](https://ubuntu.com/workshop), Ubuntu, sandboxed dev env's using lxd
 
 ## Output
+Sandboxed development environment for Ubuntu
+
+### Instaell Workshop and dependencies
 * install LXD first, 
 * install Workshop second,
 * Note this is the recommended order of dependency for easiest process
-* Note the other way round is also possible but may need some additional steps to 
+* Note the other way round is also possible but may need some additional steps to get working properly
 
 
 Workshop -- info
@@ -214,6 +217,58 @@ channels:
   3.0/edge:         git-81b81b9    2019-10-10 (11362) 55.7MB -
 installed:          6.9-bf243da               (40916)  128MB -
 ```
+
+### Hello World - Java
+Status: Success! :)
+* <todo: consider, write up fully>
+
+Create the workshop yaml file
+* Available java openjdk sdks 17, 21, 25
+```
+workshop init dev --sdks openjdk/21/stable --base ubuntu@24.04
+```
+View yaml file contents
+```
+
+```
+
+Write java app
+```
+
+```
+
+Launch workshop
+* first time use of project dev.yaml instance
+* Compile the java app code
+* Run the java app
+* Stop workshop
+```
+
+```
+
+Make a change to the java app
+* add an argument to the main method to take input strimg
+```
+
+```
+
+Start workshop
+* no launch this time
+* if changes have been made to the dev.yaml file ensure workshop refresh, for example manually editing the yaml file
+* recompile the java app
+* run the java app
+* Stop workshop
+```
+
+```
+
+### Hello World - Python
+
+
+### Hello World - C/C++
+
+
+### Hello World - Rust
 
 ## References
 
