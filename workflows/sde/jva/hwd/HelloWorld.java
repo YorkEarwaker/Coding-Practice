@@ -1,15 +1,15 @@
-/* I
-* Ubuntu Workshop java
-* hellow world example
-*/
-public class HelloWorldApp {
+/**
+ * Ubuntu Workshop java
+ * hello world example
+ */
+public class HelloWorld {
 
   public String  getGreeting() {
     return "Hello World! ubuntu workshop java example";
   }
   
   public static void main(String[] args) {
-    System.out.println(new HelloWorldApp().getGreeting());
+    System.out.println(new HelloWorld().getGreeting());
   }
 
 }
