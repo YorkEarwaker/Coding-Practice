@@ -10,10 +10,11 @@ Objectives
 
 ## Status
 TODO
-* <todo: consider, finish write up of this process>
+* <todo: consider, stop fussing with this now the main learning task has been completed>
 
 DONE
 * <todo: consider, intent to commit>
+* <todo: consider, finish write up of this process>
 
 ## Libs
 
