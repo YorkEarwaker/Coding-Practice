@@ -1,6 +1,6 @@
 # Sandboxed development environment sde
 
-stub
+Stand alone environments tailored for a specific use case. 
 
 ## Notes
 
@@ -22,14 +22,14 @@ DONE
 * Workshop, [WS](https://ubuntu.com/workshop), Ubuntu, sandboxed dev env's using lxd
 
 ## Output
-Sandboxed development environment for Ubuntu
+Sandboxed development environment for Ubuntu and other linux distro's
+* <todo: consider, catalog of OS's supported, >
 
 ### Instaell Workshop and dependencies
 * install LXD first, 
 * install Workshop second,
 * Note this is the recommended order of dependency for easiest process
 * Note the other way round is also possible but may need some additional steps to get working properly
-
 
 Workshop -- info
 ```
@@ -217,58 +217,6 @@ channels:
   3.0/edge:         git-81b81b9    2019-10-10 (11362) 55.7MB -
 installed:          6.9-bf243da               (40916)  128MB -
 ```
-
-### Hello World - Java
-Status: Success! :)
-* <todo: consider, write up fully>
-
-Create the workshop yaml file
-* Available java openjdk sdks 17, 21, 25
-```
-workshop init dev --sdks openjdk/21/stable --base ubuntu@24.04
-```
-View yaml file contents
-```
-
-```
-
-Write java app
-```
-
-```
-
-Launch workshop
-* first time use of project dev.yaml instance
-* Compile the java app code
-* Run the java app
-* Stop workshop
-```
-
-```
-
-Make a change to the java app
-* add an argument to the main method to take input strimg
-```
-
-```
-
-Start workshop
-* no launch this time
-* if changes have been made to the dev.yaml file ensure workshop refresh, for example manually editing the yaml file
-* recompile the java app
-* run the java app
-* Stop workshop
-```
-
-```
-
-### Hello World - Python
-
-
-### Hello World - C/C++
-
-
-### Hello World - Rust
 
 ## References
 
