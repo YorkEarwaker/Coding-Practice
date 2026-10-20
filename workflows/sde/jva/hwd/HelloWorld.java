@@ -9,7 +9,7 @@ public class HelloWorld {
   }
   
   public static void main(String[] args) {
-    System.out.println(new HelloWorld().getGreeting());
+    System.out.println(new HelloWorld().getGreeting() + " " + String.join(" ", args) );
   }
 
 }

@@ -96,15 +96,35 @@ HelloWorld.class
 ```
 
 Make a change to the java app
-* add an argument to the main method to take input strimg
+* Task add the arguments to the java app output
+* Edit the HelloWorld.java file in nano
+* Join the arguments to the main method to the greeting strimg
+* View java code with cat, sanity check
 ```
+$ nano HelloWorld.java
 
+$ cat HelloWorld.java
+/**
+ * Ubuntu Workshop java
+ * hello world example
+ */
+public class HelloWorld {
+
+  public String  getGreeting() {
+    return "Hello World! ubuntu workshop java example";
+  }
+  
+  public static void main(String[] args) {
+    System.out.println(new HelloWorld().getGreeting() + " " + String.join(" ", args) );
+  }
+
+}
 ```
 
 Start workshop
 * Check the workshop status
 * Start workshop, note no launch this time
-* Refresh workshop, f changes have been made to the dev.yaml file ensure workshop refresh, for example manually editing the yaml file
+* Refresh workshop, if changes have been made to the dev.yaml file ensure workshop refresh, for example manually editing the yaml file
 * Recompile the java app
 * Run the java app
 * Stop workshop
@@ -119,7 +139,13 @@ $ workshop start
 $ workshop refresh
 "dev" refreshed
 
+$ workshop exec dev -- javac HelloWorld.java -d bin
 
+$ workshop exec dev -- java -cp bin HelloWorld now with appended arguments
+Hello World! ubuntu workshop java example now with appended arguments
+
+$ workshop stop
+"dev" stopped
 ```
 
 Get the workshop instances full details
