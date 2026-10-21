@@ -15,8 +15,21 @@ Objectives
 Wip
 
 ## Status
+TODO
+* <todo: consider, fact check, is the information provided by the Brave AI true, the code looks interesting, that is what would two differenct scenarios look like, fristly Brave AI search API as data source, secondly actual JTAC data source and similar 'real world' data feeds, both scenarios using the same graph plot, . The Brave AI was good at providing a supposition, which could probably not properly be called a hypothesis, >
 
+DONE
+* <done: consider, intent to commit>
 
+## Libs
+
+Python libraries
+* Python graph libraries, tbd
+
+Data feeds
+* JTAC data feed? does non exist, or would screen scraping be required?
+* others of a similar nature, 
 
 ## References
 
+* Python
