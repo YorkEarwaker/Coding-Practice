@@ -27,6 +27,7 @@ TODO
 * <todo: consider, stand alone ARM MTE project, get to know mte usage, first pass>
 * <todo: consider, stand alone Rust project, get to know rust usage, on risc-v architecture, >
 * <todo; consider, stand along C/C++ project, get to know C/C++ usage, on risc-v architecture >
+* <todo: consider, reuse content from Brave AI session and document here re ide to pcb to die design stack and handoffs >
 
 DONE
 * <done: consider, intent to commit>
