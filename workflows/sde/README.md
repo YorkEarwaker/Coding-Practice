@@ -2,6 +2,9 @@
 
 Stand alone environments tailored for a specific use case. 
 
+See also
+* Raspberry Pi OS Snap for Ubuntu Workshop, [WS](https://forums.raspberrypi.com/viewtopic.php?t=401344#p2390640)
+
 ## Notes
 
 Objectives
