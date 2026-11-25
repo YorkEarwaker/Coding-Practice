@@ -206,7 +206,7 @@ CFLAGS_x86_64-unknown-linux-gnu = None
 ```
 
 ### Helix install
-* Status: tbd
+* Status: Success! :)
 * Helix install, Ubuntu PPA, docs [WS](https://docs.helix-editor.com/package-managers.html#ubuntu-ppa), 
 
 Ubuntu helix install - add apt PPA repo locally
@@ -246,7 +246,7 @@ Reading package lists... Done
 ```
 
 Ubuntu helix install - update apt
-* step two, update the apt local repi 
+* step two, update the apt local repo instance
 ```
 $ sudo add-apt-repository ppa:maveonair/helix-editor
 [sudo] password for york-earwaker: 
