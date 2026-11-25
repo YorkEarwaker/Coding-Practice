@@ -23,6 +23,7 @@ DONE
 
 * LXD, [WS](https://canonical.com/lxd/docs/latest/), Ubuntu, required for Workshop, system container and virtual machine manager, 
 * Workshop, [WS](https://ubuntu.com/workshop), Ubuntu, sandboxed dev env's using lxd
+* Workshop, SDKcraft, explanation [WS](https://ubuntu.com/workshop/docs/explanation/sdks/concepts/), github [GH](https://github.com/canonical/sdkcraft), Ubuntu, complex workshop distributions and management, consistent dev envs across teams, seperate snap install
 
 ## Output
 Sandboxed development environment for Ubuntu and other linux distro's
