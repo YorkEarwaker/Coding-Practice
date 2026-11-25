@@ -24,6 +24,8 @@ Targets
 * Rust + CMake + Corrosion, rust + c/cpp projects, 
 * other tdb ...
 
+Rust, [WS](https://rust-lang.org/), a language to build reliable efficient software.
+
 ## Output
 
 ### Rust install
