@@ -11,6 +11,7 @@ Targets
 * An other architecture, 
 
 ## TODO
+* <todo; consider, test helix terminal editor, open, start first rust code project, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target Ubuntu LTS 24.04.3, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target RPi Z (Pi0), SBC >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target RPi Pi (Pico), MCU >
@@ -18,18 +19,28 @@ Targets
 ## DONE
 * <done, consider, intent to commit>
 * <done; consider, install Rust development env for Ubuntu LTS 24.04.03, >
+* <done; consider, install Helix terminal code editor, >
 
 ## Libs
+Use case
 * Rust + Cargo, rust only projects, 
 * Rust + CMake + Corrosion, rust + c/cpp projects, 
 * other tdb ...
 
-Rust, [WS](https://rust-lang.org/), a language to build reliable efficient software.
+Language
+* Rust, [WS](https://rust-lang.org/), a language to build reliable efficient software.
+
+IDE - several available, see rust splash page
+* <info: for the AGW project specifically, keep under review>
+* VS Codium, UI, frist class, fully foss, microsoft telemetry stripped out, already installed, 
+* Helix, [GH](https://github.com/helix-editor/helix), [WS](https://helix-editor.com/), docs [WS](https://docs.helix-editor.com/), terminal, first class, fully foss, zero config, modern multi modal, written in rust, 
+* Zed, terminal, tbd, keep under review, fully foss
 
 ## Output
 
 ### Rust install
 Installation - ubuntu dev env
+* Status: Success! :)
 * How to set up a development environment for Rust on Ubuntu, [WS](https://documentation.ubuntu.com/ubuntu-for-developers/howto/rust-setup/)
 * Rustup, rust standalone installer, [WS](https://rustup.rs/), curl dependency, must be apt curl not snap curl or rustup install breaks
 
@@ -192,6 +203,131 @@ cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
 CFLAGS_x86_64_unknown_linux_gnu = None
 cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
 CFLAGS_x86_64-unknown-linux-gnu = None
+```
+
+### Helix install
+* Status: tbd
+* Helix install, Ubuntu PPA, docs [WS](https://docs.helix-editor.com/package-managers.html#ubuntu-ppa), 
+
+Ubuntu helix install - add apt PPA repo locally
+* step one, add the ppa repo
+```
+$ sudo add-apt-repository ppa:maveonair/helix-editor
+[sudo] password for york-earwaker: 
+Repository: 'Types: deb
+URIs: https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu/
+Suites: noble
+Components: main
+'
+Description:
+A post-modern text editor.
+
+The source code used to build the package can be found here: https://github.com/maveonair/helix-ppa.
+More info: https://launchpad.net/~maveonair/+archive/ubuntu/helix-editor
+Adding repository.
+Press [ENTER] to continue or Ctrl-c to cancel.
+Hit:1 http://gb.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://gb.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]     
+Hit:3 http://gb.archive.ubuntu.com/ubuntu noble-backports InRelease            
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease               
+Get:5 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1,492 kB]
+Get:6 http://gb.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [321 kB]
+Hit:7 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease     
+Ign:8 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
+Get:8 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease [17.8 kB]
+Ign:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages
+Ign:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en
+Ign:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages
+Ign:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en
+Get:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages [492 B]
+Get:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en [212 B]
+Fetched 1,957 kB in 56s (35.1 kB/s)      
+Reading package lists... Done
+```
+
+Ubuntu helix install - update apt
+* step two, update the apt local repi 
+```
+$ sudo add-apt-repository ppa:maveonair/helix-editor
+[sudo] password for york-earwaker: 
+Repository: 'Types: deb
+URIs: https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu/
+Suites: noble
+Components: main
+'
+Description:
+A post-modern text editor.
+
+The source code used to build the package can be found here: https://github.com/maveonair/helix-ppa.
+More info: https://launchpad.net/~maveonair/+archive/ubuntu/helix-editor
+Adding repository.
+Press [ENTER] to continue or Ctrl-c to cancel.
+Hit:1 http://gb.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://gb.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]     
+Hit:3 http://gb.archive.ubuntu.com/ubuntu noble-backports InRelease            
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease               
+Get:5 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1,492 kB]
+Get:6 http://gb.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [321 kB]
+Hit:7 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease     
+Ign:8 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
+Get:8 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease [17.8 kB]
+Ign:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages
+Ign:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en
+Ign:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages
+Ign:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en
+Get:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages [492 B]
+Get:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en [212 B]
+Fetched 1,957 kB in 56s (35.1 kB/s)      
+Reading package lists... Done
+york-earwaker@york-earwaker-XPS-15-9560:~$ sudo apt update
+Hit:1 http://gb.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://gb.archive.ubuntu.com/ubuntu noble-updates InRelease              
+Hit:3 http://gb.archive.ubuntu.com/ubuntu noble-backports InRelease            
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease               
+Ign:5 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease     
+Ign:6 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
+Ign:5 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease
+Ign:6 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
+Ign:5 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease
+Ign:6 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
+Err:5 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease
+  503  Service Unavailable [IP: 2620:2d:4000:1009::12c 443]
+Err:6 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
+  503  Service Unavailable [IP: 185.125.189.186 443]
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+W: Failed to fetch https://ppa.launchpadcontent.net/git-core/ppa/ubuntu/dists/noble/InRelease  503  Service Unavailable [IP: 2620:2d:4000:1009::12c 443]
+W: Failed to fetch https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu/dists/noble/InRelease  503  Service Unavailable [IP: 185.125.189.186 443]
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+```
+
+Ubuntu helix install - do the helix install
+* Step three, install the helix terminal editor
+```
+$ sudo apt install helix
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  helix
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 16.5 MB of archives.
+After this operation, 177 MB of additional disk space will be used.
+Ign:1 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 helix amd64 24.07-1~ubuntu24.04~ppa1
+Ign:1 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 helix amd64 24.07-1~ubuntu24.04~ppa1
+Ign:1 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 helix amd64 24.07-1~ubuntu24.04~ppa1
+Get:1 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 helix amd64 24.07-1~ubuntu24.04~ppa1 [16.5 MB]
+Fetched 16.5 MB in 58s (284 kB/s)                                              
+Selecting previously unselected package helix.
+(Reading database… 284377 files and directories currently installed.)
+Preparing to unpack …/helix_24.07-1~ubuntu24.04~ppa1_amd64.deb…
+Unpacking helix (24.07-1~ubuntu24.04~ppa1)…
+Setting up helix (24.07-1~ubuntu24.04~ppa1)…
+Processing triggers for hicolor-icon-theme (0.17-2)…
+Processing triggers for gnome-menus (3.36.0-1.1ubuntu3)…
+Processing triggers for desktop-file-utils (0.27-2build1)…
 ```
 
 ## References
