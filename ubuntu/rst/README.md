@@ -143,7 +143,13 @@ info: default host tuple is x86_64-unknown-linux-gnu
 info: syncing channel updates for stable-x86_64-unknown-linux-gnu
 info: latest update on 2026-11-12 for version 1.100.0 (0ef1bc386 2026-11-09)
 info: downloading 6 components
-        cargo installed                       10.44 MiB                                clippy installed                        5.11 MiB                             rust-docs installed                       23.22 MiB                              rust-std installed                       29.83 MiB                                 rustc installed                       81.02 MiB                               rustfmt installed                        2.41 MiB                         info: default toolchain set to stable-x86_64-unknown-linux-gnu
+        cargo installed                       10.44 MiB                                
+        clippy installed                       5.11 MiB                             
+        rust-docs installed                   23.22 MiB                              
+        rust-std installed                    29.83 MiB                                 
+        rustc installed                       81.02 MiB                               
+        rustfmt installed                      2.41 MiB                         
+info: default toolchain set to stable-x86_64-unknown-linux-gnu
 
   stable-x86_64-unknown-linux-gnu installed - rustc 1.100.0 (0ef1bc386 2026-11-09)
 
