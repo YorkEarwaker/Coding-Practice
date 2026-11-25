@@ -11,25 +11,82 @@ Targets
 * An other architecture, 
 
 ## TODO
-* <todo; consider, install Rust development env for Ubuntu LTS 24.04.03, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target Ubuntu LTS 24.04.3, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target RPi Z (Pi0), SBC >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target RPi Pi (Pico), MCU >
 
 ## DONE
 * <done, consider, intent to commit>
+* <done; consider, install Rust development env for Ubuntu LTS 24.04.03, >
 
 ## Libs
 * Rust + Cargo, rust only projects, 
 * Rust + CMake + Corrosion, rust + c/cpp projects, 
 * other tdb ...
 
+## Output
+
 ### Rust install
 Installation - ubuntu dev env
 * How to set up a development environment for Rust on Ubuntu, [WS](https://documentation.ubuntu.com/ubuntu-for-developers/howto/rust-setup/)
-* Rustup, rust standalone installer, [WS](https://rustup.rs/), curl dependency
+* Rustup, rust standalone installer, [WS](https://rustup.rs/), curl dependency, must be apt curl not snap curl or rustup install breaks
 
-Installed - rustup, default install
+Check curl installed instance and reinstall if necessary
+```
+$ snap list curl
+Name  Version  Rev   Tracking       Publisher  Notes
+curl  8.23.0   2429  latest/stable  aoilinux   -
+
+$ command -v curl
+/snap/bin/curl
+
+$ whereis curl
+curl: /snap/bin/curl
+
+$ sudo snap remove curl && sudo apt install curl
+[sudo] password for york-earwaker: 
+curl removed (snap data snapshot saved)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  nvidia-firmware-580-580.173.02
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  curl
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 226 kB of archives.
+After this operation, 537 kB of additional disk space will be used.
+Get:1 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.16 [226 kB]
+Fetched 226 kB in 0s (2,438 kB/s)
+Selecting previously unselected package curl.
+(Reading database… 284377 files and directories currently installed.)
+Preparing to unpack …/curl_8.5.0-2ubuntu10.16_amd64.deb…
+Unpacking curl (8.5.0-2ubuntu10.16)…
+Setting up curl (8.5.0-2ubuntu10.16)…
+Processing triggers for man-db (2.12.0-4build2)…
+
+$ whereis curl
+curl: /usr/bin/curl /usr/share/man/man1/curl.1.gz
+
+$ command -v curl
+/usr/bin/curl
+
+$ sudo apt autoremove
+[sudo] password for york-earwaker: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages will be REMOVED:
+  nvidia-firmware-580-580.173.02
+0 upgraded, 0 newly installed, 1 to remove and 1 not upgraded.
+After this operation, 106 MB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database… 284384 files and directories currently installed.)
+Removing nvidia-firmware-580-580.173.02 (580.173.02-0ubuntu0.24.04.1)…
+```
+
+Install rust - rustup, default install
 ```
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 info: downloading installer
