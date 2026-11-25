@@ -11,6 +11,7 @@ Targets
 * An other architecture, 
 
 ## TODO
+* <todo; consider, install rust-analyzer language server protocol LSP, rust-analyzer is not part of the rustup default install, >
 * <todo; consider, test helix terminal editor, open, start first rust code project, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target Ubuntu LTS 24.04.3, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target RPi Z (Pi0), SBC >
@@ -29,6 +30,8 @@ Use case
 
 Language
 * Rust, [WS](https://rust-lang.org/), a language to build reliable efficient software.
+* Rustup, [WS](https://rustup.rs/), toolchain manager, installer, install this first
+* rust-analyzer, [WS](https://rust-analyzer.github.io/book/index.html), language server, ide functionality for writing rust programs, dependency rustup, required separate instal for helix terminal editor, 
 
 IDE - several available, see rust splash page
 * <info: for the AGW project specifically, keep under review>
@@ -39,8 +42,8 @@ IDE - several available, see rust splash page
 ## Output
 
 ### Rust install
-Installation - ubuntu dev env
-* Status: Success! :)
+Status: Success! :)
+* Intall Ubuntu dev env
 * How to set up a development environment for Rust on Ubuntu, [WS](https://documentation.ubuntu.com/ubuntu-for-developers/howto/rust-setup/)
 * Rustup, rust standalone installer, [WS](https://rustup.rs/), curl dependency, must be apt curl not snap curl or rustup install breaks
 
@@ -206,7 +209,8 @@ CFLAGS_x86_64-unknown-linux-gnu = None
 ```
 
 ### Helix install
-* Status: Success! :)
+Status: Success! :)
+* Intall Ubuntu dev env
 * Helix install, Ubuntu PPA, docs [WS](https://docs.helix-editor.com/package-managers.html#ubuntu-ppa), 
 
 Ubuntu helix install - add apt PPA repo locally
@@ -329,6 +333,12 @@ Processing triggers for hicolor-icon-theme (0.17-2)…
 Processing triggers for gnome-menus (3.36.0-1.1ubuntu3)…
 Processing triggers for desktop-file-utils (0.27-2build1)…
 ```
+
+### rust-analyzer install
+Status: tbd
+* Intall Ubuntu dev env
+* rust-analyzer, install, docs [WS](https://rust-analyzer.github.io/book/installation.html)
+* ...
 
 ## References
 
