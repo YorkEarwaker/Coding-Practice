@@ -103,7 +103,7 @@ Do you want to continue? [Y/n] y
 Removing nvidia-firmware-580-580.173.02 (580.173.02-0ubuntu0.24.04.1)…
 ```
 
-Install rust - rustup, default install
+Install rust - rustup, cargo, default install
 ```
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 info: downloading installer
@@ -226,11 +226,11 @@ Status: Success! :)
 * Intall Ubuntu dev env
 * Helix install, Ubuntu PPA, depricated, PPA no longer supported but still in install docs
  #15890 [GH](https://github.com/helix-editor/helix/issues/15890), but still in docs circa Nov 26 2026, [WS](https://docs.helix-editor.com/package-managers.html#ubuntu-ppa), Failed? :( ? likely from PPA option yes, apparently no longer supported. The install worked but the version may not be compatible with LTS 24.04.3, so a reinstall with backward compatible version binaries or bespoke build from source code may be required. Backed out and uninstalled.
-* <todo; consider is Ubuntu/Debian option .deb install the only viable option now.>
+* <todo; consider is Ubuntu/Debian option .deb install the only viable option now for latest up to date release, see helix releases below, waring! uninstall helix snap first to avoid unintended consequences, >
 * Helix releases [GH](https://github.com/helix-editor/helix/releases), latest release for manual .deb install, requires manual reinstall with every new helix release
 
 Ubuntu helix install - snap
-* snap for Ubuntu for evaluation
+* snap for Ubuntu for evaluation, lags behind latest release
 * snap install --classic helix 
 ```
 $ snap install --classic helix
@@ -319,7 +319,7 @@ Status: Success! :)
 
 Install rust-analyzer
 * apparently since ≥ 1.26 rust-analyzer is placed in $PATH (at ~/.cargo/bin/rust-analyzer)
-* 
+* dependency on rustup install beforehand 
 ```
 $ rustup component add rust-analyzer
 info: downloading component rust-analyzer
@@ -327,6 +327,7 @@ rust-analyzer installed                        9.11 MiB
 ```
 
 Check cargo dir contents
+* rust-analyzer appears on cargo bin directory 
 ```
 $ sudo ls ~/.cargo/bin
 cargo	      cargo-miri     rust-analyzer  rustfmt	 rust-lldb
