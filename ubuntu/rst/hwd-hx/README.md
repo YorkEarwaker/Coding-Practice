@@ -1,6 +1,6 @@
 # Hello world helix hwd-hx
 
-First hello world project using the helix text edictor with rust using rust-analyzer SLP
+First hello world project using the helix text editor with rust using rust-analyzer SLP
 
 stub.
 
@@ -24,20 +24,22 @@ DONE
 ### Open close helix editor
 
 Open editor on the command line
+* 'hx' or 'helix'
 ```
 $ hx
 ```
 
 Close the current view, quit editor
 * Note no text was written in helix editor window
-* :q or :quit , to close the editor view
+* type colon first ':' which displays a menu of possible commands
+* ':q' or ':quit' , to close the editor view
 ```
 :q
 ```
 
 Force close the current view, ignoring unsaved changes
 * Regardless if any text was written in the helix editor window
-* q! or quit!, to close the editor view without saving
+* ':q!' or ':quit!', to close the editor view without saving
 ```
 :q!
 ```
@@ -47,4 +49,6 @@ tdb
 
 ## References
 
-* helix editor commands
+Docs 
+* helix, [WS](https://docs.helix-editor.com/title-page.html), docs
+* helix, usage, commands, [WS](https://docs.helix-editor.com/commands.html)
