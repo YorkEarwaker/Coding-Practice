@@ -238,7 +238,18 @@ $ snap install --classic helix
 helix 25.07.1 from Lauren Brock✪ installed
 ```
 
+Check helix version
+* the snap version, installed '2026.11.26'
+```
+$ helix -V
+helix 25.07.1 (a05c151b)
+
+$ hx -V
+helix 25.07.1 (a05c151b)
+```
+
 Check helix snap install details, whereis, command, list, info
+* the snap version, installed '2026.11.26'
 ```
 $ whereis helix
 helix: /snap/bin/helix
@@ -299,6 +310,37 @@ Textobject queries: ✓
 Indent queries: ✓
 ```
 
+Helix help - commands and argument flags
+```
+$ hx --help
+helix-term 25.07.1 (a05c151b)
+Blaž Hrastnik <blaz@mxxn.io>
+A post-modern text editor.
+
+USAGE:
+    hx [FLAGS] [files]...
+
+ARGS:
+    <files>...    Sets the input file to use, position can also be specified via file[:row[:col]]
+
+FLAGS:
+    -h, --help                     Prints help information
+    --tutor                        Loads the tutorial
+    --health [CATEGORY]            Checks for potential errors in editor setup
+                                   CATEGORY can be a language or one of 'clipboard', 'languages'
+                                   or 'all'. 'all' is the default if not specified.
+    -g, --grammar {fetch|build}    Fetches or builds tree-sitter grammars listed in languages.toml
+    -c, --config <file>            Specifies a file to use for configuration
+    -v                             Increases logging verbosity each use for up to 3 times
+    --log <file>                   Specifies a file to use for logging
+                                   (default file: /home/york-earwaker/.cache/helix/helix.log)
+    -V, --version                  Prints version information
+    --vsplit                       Splits all given files vertically into different windows
+    --hsplit                       Splits all given files horizontally into different windows
+    -w, --working-dir <path>       Specify an initial working directory
+    +N                             Open the first given file at line number N
+```
+
 ### Install lldb-dap debug adapter
 Status: tbd
 * <todo: consider, lldb-dap install only when necessary, >
@@ -336,7 +378,7 @@ cargo-clippy  clippy-driver  rustc	    rust-gdb	 rustup
 cargo-fmt     rls	     rustdoc	    rust-gdbgui
 ```
 
-### Createa helix languages.toml file
+### Create a helix languages.toml file
 Status: tbd
 * <todo: consider, create global languages.toml file only when necessary, not created automatically, default setting compiled into the hx binary see https://github.com/helix-editor/helix/blob/master/languages.toml >
 * This is only necessary to create bespoke settings to overwrite rust-analyser default settings
