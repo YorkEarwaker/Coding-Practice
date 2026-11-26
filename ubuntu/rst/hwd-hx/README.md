@@ -52,3 +52,6 @@ tdb
 Docs 
 * helix, [WS](https://docs.helix-editor.com/title-page.html), docs
 * helix, usage, commands, [WS](https://docs.helix-editor.com/commands.html)
+
+Wiki
+* helix, [GH](https://github.com/helix-editor/helix/wiki), wiki

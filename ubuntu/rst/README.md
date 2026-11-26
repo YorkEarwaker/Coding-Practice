@@ -39,7 +39,7 @@ Language
 IDE - several available, see rust splash page
 * <info: for the AGW project specifically, keep under review>
 * VS Codium, UI, frist class, fully foss, microsoft telemetry stripped out, already installed, 
-* Helix, [GH](https://github.com/helix-editor/helix), [WS](https://helix-editor.com/), docs [WS](https://docs.helix-editor.com/), terminal, first class, fully foss, zero config, modern multi modal, written in rust, 
+* Helix, [GH](https://github.com/helix-editor/helix), [WS](https://helix-editor.com/), docs [WS](https://docs.helix-editor.com/), wiki [GH](https://github.com/helix-editor/helix/wiki), terminal, first class, fully foss, zero config, modern multi modal, written in rust, 
 * Zed, terminal, tbd, keep under review, fully foss
 
 ## Output
