@@ -209,9 +209,13 @@ CFLAGS_x86_64-unknown-linux-gnu = None
 ```
 
 ### Helix install
-Status: Success! :)
+Status: Failed? :( ? likely from PPA option yes, apparently no longer supported. To be tested. The install worked but the version may not be compatible with LTS 24.04.3, so a reinstall with backward compatible version binaries or bespoke build from source code may be required. 
+* <todo: consider, if not working correctly then perhaps an excuse for first compile from source code as a learning step, this may also be an issue with rust-analyzer see below, tbd >
 * Intall Ubuntu dev env
-* Helix install, Ubuntu PPA, docs [WS](https://docs.helix-editor.com/package-managers.html#ubuntu-ppa), 
+* Helix install, Ubuntu PPA, depricated, PPA no longer supported but still in install docs
+ #15890 [GH](https://github.com/helix-editor/helix/issues/15890), but still in docs circa Nov 26 2026, [WS](https://docs.helix-editor.com/package-managers.html#ubuntu-ppa), 
+* <todo; consider is Ubuntu/Debian option .deb install the only viable option now.>
+* <todo; consider, back out PPA repo addition, uninstall helix apt, confused, >
 
 Ubuntu helix install - add apt PPA repo locally
 * step one, add the ppa repo
