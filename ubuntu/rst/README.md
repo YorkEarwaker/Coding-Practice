@@ -20,7 +20,8 @@ Targets
 ## DONE
 * <done, consider, intent to commit>
 * <done; consider, install Rust development env for Ubuntu LTS 24.04.03, >
-* <done; consider, install Helix terminal code editor, >
+* <done; consider, uninstall helix apt install, back out PPA repo addition, uninstall helix apt, best option .deb install or snap install, >
+* <done; consider, install Helix terminal code editor, snap instance for initial evaluation, consider .deb install at a later date if necessary, >
 
 ## Libs
 Use case
@@ -208,141 +209,144 @@ cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
 CFLAGS_x86_64-unknown-linux-gnu = None
 ```
 
+Check rustup and cargo dir were created
+* .rustup dir
+* .cargo dir
+```
+$ sudo ls ~/.rustup
+[sudo] password for york-earwaker: 
+downloads  settings.toml  tmp  toolchains  update-hashes
+
+$ sudo ls ~/.cargo
+bin  env
+```
+
 ### Helix install
-Status: Failed? :( ? likely from PPA option yes, apparently no longer supported. To be tested. The install worked but the version may not be compatible with LTS 24.04.3, so a reinstall with backward compatible version binaries or bespoke build from source code may be required. 
-* <todo: consider, if not working correctly then perhaps an excuse for first compile from source code as a learning step, this may also be an issue with rust-analyzer see below, tbd >
+Status: Success! :) 
 * Intall Ubuntu dev env
 * Helix install, Ubuntu PPA, depricated, PPA no longer supported but still in install docs
- #15890 [GH](https://github.com/helix-editor/helix/issues/15890), but still in docs circa Nov 26 2026, [WS](https://docs.helix-editor.com/package-managers.html#ubuntu-ppa), 
+ #15890 [GH](https://github.com/helix-editor/helix/issues/15890), but still in docs circa Nov 26 2026, [WS](https://docs.helix-editor.com/package-managers.html#ubuntu-ppa), Failed? :( ? likely from PPA option yes, apparently no longer supported. The install worked but the version may not be compatible with LTS 24.04.3, so a reinstall with backward compatible version binaries or bespoke build from source code may be required. Backed out and uninstalled.
 * <todo; consider is Ubuntu/Debian option .deb install the only viable option now.>
-* <todo; consider, back out PPA repo addition, uninstall helix apt, confused, >
+* Helix releases [GH](https://github.com/helix-editor/helix/releases), latest release for manual .deb install, requires manual reinstall with every new helix release
 
-Ubuntu helix install - add apt PPA repo locally
-* step one, add the ppa repo
+Ubuntu helix install - snap
+* snap for Ubuntu for evaluation
+* snap install --classic helix 
 ```
-$ sudo add-apt-repository ppa:maveonair/helix-editor
-[sudo] password for york-earwaker: 
-Repository: 'Types: deb
-URIs: https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu/
-Suites: noble
-Components: main
-'
-Description:
-A post-modern text editor.
-
-The source code used to build the package can be found here: https://github.com/maveonair/helix-ppa.
-More info: https://launchpad.net/~maveonair/+archive/ubuntu/helix-editor
-Adding repository.
-Press [ENTER] to continue or Ctrl-c to cancel.
-Hit:1 http://gb.archive.ubuntu.com/ubuntu noble InRelease
-Get:2 http://gb.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]     
-Hit:3 http://gb.archive.ubuntu.com/ubuntu noble-backports InRelease            
-Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease               
-Get:5 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1,492 kB]
-Get:6 http://gb.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [321 kB]
-Hit:7 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease     
-Ign:8 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
-Get:8 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease [17.8 kB]
-Ign:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages
-Ign:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en
-Ign:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages
-Ign:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en
-Get:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages [492 B]
-Get:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en [212 B]
-Fetched 1,957 kB in 56s (35.1 kB/s)      
-Reading package lists... Done
+$ snap install --classic helix
+helix 25.07.1 from Lauren Brock✪ installed
 ```
 
-Ubuntu helix install - update apt
-* step two, update the apt local repo instance
+Check helix snap install details, whereis, command, list, info
 ```
-$ sudo add-apt-repository ppa:maveonair/helix-editor
-[sudo] password for york-earwaker: 
-Repository: 'Types: deb
-URIs: https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu/
-Suites: noble
-Components: main
-'
-Description:
-A post-modern text editor.
+$ whereis helix
+helix: /snap/bin/helix
 
-The source code used to build the package can be found here: https://github.com/maveonair/helix-ppa.
-More info: https://launchpad.net/~maveonair/+archive/ubuntu/helix-editor
-Adding repository.
-Press [ENTER] to continue or Ctrl-c to cancel.
-Hit:1 http://gb.archive.ubuntu.com/ubuntu noble InRelease
-Get:2 http://gb.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]     
-Hit:3 http://gb.archive.ubuntu.com/ubuntu noble-backports InRelease            
-Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease               
-Get:5 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1,492 kB]
-Get:6 http://gb.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [321 kB]
-Hit:7 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease     
-Ign:8 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
-Get:8 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease [17.8 kB]
-Ign:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages
-Ign:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en
-Ign:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages
-Ign:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en
-Get:9 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 Packages [492 B]
-Get:10 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main Translation-en [212 B]
-Fetched 1,957 kB in 56s (35.1 kB/s)      
-Reading package lists... Done
-york-earwaker@york-earwaker-XPS-15-9560:~$ sudo apt update
-Hit:1 http://gb.archive.ubuntu.com/ubuntu noble InRelease
-Hit:2 http://gb.archive.ubuntu.com/ubuntu noble-updates InRelease              
-Hit:3 http://gb.archive.ubuntu.com/ubuntu noble-backports InRelease            
-Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease               
-Ign:5 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease     
-Ign:6 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
-Ign:5 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease
-Ign:6 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
-Ign:5 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease
-Ign:6 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
-Err:5 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease
-  503  Service Unavailable [IP: 2620:2d:4000:1009::12c 443]
-Err:6 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble InRelease
-  503  Service Unavailable [IP: 185.125.189.186 443]
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-1 package can be upgraded. Run 'apt list --upgradable' to see it.
-W: Failed to fetch https://ppa.launchpadcontent.net/git-core/ppa/ubuntu/dists/noble/InRelease  503  Service Unavailable [IP: 2620:2d:4000:1009::12c 443]
-W: Failed to fetch https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu/dists/noble/InRelease  503  Service Unavailable [IP: 185.125.189.186 443]
-W: Some index files failed to download. They have been ignored, or old ones used instead.
+$ command -v helix
+/snap/bin/helix
+
+$ snap list helix
+Name   Version  Rev  Tracking       Publisher      Notes
+helix  25.07.1  120  latest/stable  lauren-brock✪  classic
+
+$ snap info helix
+name:      helix
+summary:   A post-modern modal text editor written in Rust.
+publisher: Lauren Brock✪
+store-url: https://snapcraft.io/helix
+license:   MPL-2.0
+description: |
+  Helix is a terminal-based modal text editor inspired by Vim and Kakoune,
+  built for modern development workflows.
+  
+  Features:
+    * Vim-like modal editing with a selection-first, action-second model
+    borrowed from Kakoune
+    * Multiple cursors and selections as a first-class feature
+    * Built-in Language Server Protocol (LSP) support for code intelligence:
+    completions, diagnostics, go-to-definition, and more — no plugins needed
+    * Smart, incremental syntax highlighting and structural editing via
+    tree-sitter
+    * Fuzzy file picker, global search, and a built-in command palette
+    * Written in Rust for performance and reliability
+commands:
+  - helix
+snap-id:      JbSwFezsVhBG8EpYeNqD4HX31U5WIzdY
+tracking:     latest/stable
+refresh-date: today at 09:13 GMT
+channels:
+  latest/stable:    25.07.1              2025-07-19 (120) 21.7MB classic
+  latest/candidate: ↑                                            
+  latest/beta:      ↑                                            
+  latest/edge:      25.07-984-g079a789e8 2026-09-12 (177) 25.0MB classic
+installed:          25.07.1                         (120) 21.7MB classic
 ```
 
-Ubuntu helix install - do the helix install
-* Step three, install the helix terminal editor
+Check helix health once rust-analyzer installed
+* see below rust-analyzer install 
+* hx is the helix binary
 ```
-$ sudo apt install helix
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following NEW packages will be installed:
-  helix
-0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
-Need to get 16.5 MB of archives.
-After this operation, 177 MB of additional disk space will be used.
-Ign:1 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 helix amd64 24.07-1~ubuntu24.04~ppa1
-Ign:1 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 helix amd64 24.07-1~ubuntu24.04~ppa1
-Ign:1 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 helix amd64 24.07-1~ubuntu24.04~ppa1
-Get:1 https://ppa.launchpadcontent.net/maveonair/helix-editor/ubuntu noble/main amd64 helix amd64 24.07-1~ubuntu24.04~ppa1 [16.5 MB]
-Fetched 16.5 MB in 58s (284 kB/s)                                              
-Selecting previously unselected package helix.
-(Reading database… 284377 files and directories currently installed.)
-Preparing to unpack …/helix_24.07-1~ubuntu24.04~ppa1_amd64.deb…
-Unpacking helix (24.07-1~ubuntu24.04~ppa1)…
-Setting up helix (24.07-1~ubuntu24.04~ppa1)…
-Processing triggers for hicolor-icon-theme (0.17-2)…
-Processing triggers for gnome-menus (3.36.0-1.1ubuntu3)…
-Processing triggers for desktop-file-utils (0.27-2build1)…
+$ hx --health rust
+Configured language servers:
+  ✓ rust-analyzer: /home/york-earwaker/.cargo/bin/rust-analyzer
+Configured debug adapter:
+  ✘ 'lldb-dap' not found in $PATH
+Configured formatter: None
+Tree-sitter parser: ✓
+Highlight queries: ✓
+Textobject queries: ✓
+Indent queries: ✓
+```
+
+### Install lldb-dap debug adapter
+Status: tbd
+* <todo: consider, lldb-dap install only when necessary, >
+* Only need to step through rust code from within helix.
+* Not necessary if using Cargo test or only running binaries
+
+Not yet installed
+* not tested and '$ls ~/.cargo/bin' contains 'rust-lldb'
+* maybe just needs config somewhere for 'rust-lldb' and no need to install lldb?
+```
+sudo apt install lldb
+cargo install lldb-dap
 ```
 
 ### rust-analyzer install
-Status: tbd
+Status: Success! :)
 * Intall Ubuntu dev env
 * rust-analyzer, install, docs [WS](https://rust-analyzer.github.io/book/installation.html)
-* ...
+
+Install rust-analyzer
+* apparently since ≥ 1.26 rust-analyzer is placed in $PATH (at ~/.cargo/bin/rust-analyzer)
+* 
+```
+$ rustup component add rust-analyzer
+info: downloading component rust-analyzer
+rust-analyzer installed                        9.11 MiB 
+```
+
+Check cargo dir contents
+```
+$ sudo ls ~/.cargo/bin
+cargo	      cargo-miri     rust-analyzer  rustfmt	 rust-lldb
+cargo-clippy  clippy-driver  rustc	    rust-gdb	 rustup
+cargo-fmt     rls	     rustdoc	    rust-gdbgui
+```
+
+### Createa helix languages.toml file
+Status: tbd
+* <todo: consider, create global languages.toml file only when necessary, not created automatically, default setting compiled into the hx binary see https://github.com/helix-editor/helix/blob/master/languages.toml >
+* This is only necessary to create bespoke settings to overwrite rust-analyser default settings
+* the helix languages.toml gobal overides, can declaire LSP explicitly, and attributes, 
+* create the languages.toml with 'touch'
+* edit the languages. toml with 'nano'
+
+Not yet attempted
+```
+$ touch ~/.config/helix/languages.toml
+$ nano ~/.config/helix/languages.toml
+```
 
 ## References
 
