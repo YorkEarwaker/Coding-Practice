@@ -12,7 +12,6 @@ Targets
 
 ## TODO
 * <todo; consider is Ubuntu/Debian option .deb install the only viable option now for latest up to date release, see helix releases below, waring! uninstall helix snap first to avoid unintended consequences, >
-* <todo; consider, test helix terminal editor, open, start first rust code project, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target Ubuntu LTS 24.04.3, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target RPi Z (Pi0), SBC >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target RPi Pi (Pico), MCU >
@@ -23,6 +22,7 @@ Targets
 * <done; consider, uninstall helix apt install, back out PPA repo addition, uninstall helix apt, best option .deb install or snap install, >
 * <done; consider, install Helix terminal code editor, snap instance for initial evaluation, consider .deb install at a later date if necessary, >
 * <done; consider, install rust-analyzer language server protocol LSP, rust-analyzer is not part of the rustup default install, >
+* <done; consider, test helix terminal editor, open close editor, write first rust code using editor, see /hwd-hx, wip>
 
 ## Libs
 Use case
