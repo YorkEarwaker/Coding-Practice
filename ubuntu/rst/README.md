@@ -11,7 +11,7 @@ Targets
 * An other architecture, 
 
 ## TODO
-* <todo; consider, install rust-analyzer language server protocol LSP, rust-analyzer is not part of the rustup default install, >
+* <todo; consider is Ubuntu/Debian option .deb install the only viable option now for latest up to date release, see helix releases below, waring! uninstall helix snap first to avoid unintended consequences, >
 * <todo; consider, test helix terminal editor, open, start first rust code project, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target Ubuntu LTS 24.04.3, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target RPi Z (Pi0), SBC >
@@ -22,6 +22,7 @@ Targets
 * <done; consider, install Rust development env for Ubuntu LTS 24.04.03, >
 * <done; consider, uninstall helix apt install, back out PPA repo addition, uninstall helix apt, best option .deb install or snap install, >
 * <done; consider, install Helix terminal code editor, snap instance for initial evaluation, consider .deb install at a later date if necessary, >
+* <done; consider, install rust-analyzer language server protocol LSP, rust-analyzer is not part of the rustup default install, >
 
 ## Libs
 Use case
@@ -226,11 +227,11 @@ Status: Success! :)
 * Intall Ubuntu dev env
 * Helix install, Ubuntu PPA, depricated, PPA no longer supported but still in install docs
  #15890 [GH](https://github.com/helix-editor/helix/issues/15890), but still in docs circa Nov 26 2026, [WS](https://docs.helix-editor.com/package-managers.html#ubuntu-ppa), Failed? :( ? likely from PPA option yes, apparently no longer supported. The install worked but the version may not be compatible with LTS 24.04.3, so a reinstall with backward compatible version binaries or bespoke build from source code may be required. Backed out and uninstalled.
-* <todo; consider is Ubuntu/Debian option .deb install the only viable option now for latest up to date release, see helix releases below, waring! uninstall helix snap first to avoid unintended consequences, >
 * Helix releases [GH](https://github.com/helix-editor/helix/releases), latest release for manual .deb install, requires manual reinstall with every new helix release
 
 Ubuntu helix install - snap
-* snap for Ubuntu for evaluation, lags behind latest release
+* snap for Ubuntu for evaluation, 
+* simplest approach for Ubuntu for evaluation but lags behind latest release
 * snap install --classic helix 
 ```
 $ snap install --classic helix
