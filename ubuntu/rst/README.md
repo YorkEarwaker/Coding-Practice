@@ -11,7 +11,8 @@ Targets
 * An other architecture, 
 
 ## TODO
-* <todo; consider is Ubuntu/Debian option .deb install the only viable option now for latest up to date release, see helix releases below, waring! uninstall helix snap first to avoid unintended consequences, >
+* <todo; consider, helix Ubuntu/Debian option .deb install the only viable option now for latest up to date release, see helix releases below, waring! uninstall helix snap first to avoid unintended consequences, >
+* <todo; consider, get rust working in VS Codium ide, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target Ubuntu LTS 24.04.3, >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target RPi Z (Pi0), SBC >
 * <todo; consider, hello world Rust example, first time coding in Rust ever! target RPi Pi (Pico), MCU >
