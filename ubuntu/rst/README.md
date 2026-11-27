@@ -396,15 +396,26 @@ Status: tbd
 * create the languages.toml with 'touch'
 * edit the languages. toml with 'nano'
 
-Create a helix languages.toml file
-* Not yet attempted
+Configure helix languages.toml file
+* for explicite use rustfmt and clippy 
+* Check contents of ~/.config/helix
+```
+$ ls -al ~/.config/helix
+total 8
+drwxrwxr-x  2 york-earwaker york-earwaker 4096 Nov 26 09:47 .
+drwx------ 21 york-earwaker york-earwaker 4096 Nov 26 09:23
+```
+* Create a helix languages.toml file
+* if one does not exist as in he example above
 ```
 $ touch ~/.config/helix/languages.toml
+```
+* Edit the languages.toml file in nano, or other text editor
+```
 $ nano ~/.config/helix/languages.toml
 ```
-
-Helix languages.toml file content
-* confirm from primary source this is correct and link
+* Write languages.toml file content
+* <todo: consider, confirm from primary source this is correct and link, helix languages.toml rustfmt, clippy entries>
 ```
 [[language]]
 name - "rust"
@@ -414,6 +425,14 @@ auto-format = true
 [language-server.rust-analyzer.config]
 checkOnSave = { command = "clippy" }
 ```
+
+Alternate formatter line
+* for use of nightly-only rustfmt options
+```
+formatter = { command = "rustfmt", args = ["+nightly"] }
+```
+
+
 #### VS Codium
 Status: tbd
 * settings.json
