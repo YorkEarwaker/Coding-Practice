@@ -389,7 +389,7 @@ Consider also not necesserily all configuration is editor related but rust envir
 * tbd other cargo/rust/rust-analyzer configuration files
 
 #### Helix
-Status: tbd
+Status: Success! :)
 * <todo: consider, create global languages.toml file only when necessary, not created automatically, default setting compiled into the hx binary see https://github.com/helix-editor/helix/blob/master/languages.toml >
 * This is only necessary to create bespoke settings to overwrite rust-analyser default settings
 * the helix languages.toml gobal overides, can declaire LSP explicitly, and attributes, 
@@ -399,16 +399,25 @@ Status: tbd
 Configure helix languages.toml file
 * for explicite use rustfmt and clippy 
 * Check contents of ~/.config/helix
+* Note in this example there is no languages.toml listed, it does not exist yet
+* Note helix does not create a an empty languages.toml file durring install
 ```
 $ ls -al ~/.config/helix
 total 8
 drwxrwxr-x  2 york-earwaker york-earwaker 4096 Nov 26 09:47 .
-drwx------ 21 york-earwaker york-earwaker 4096 Nov 26 09:23
+drwx------ 21 york-earwaker york-earwaker 4096 Nov 26 09:23 ..
 ```
-* Create a helix languages.toml file
-* if one does not exist as in he example above
+* Create a helix languages.toml file, if it does not yet exist as in the example above
+* Confirm the file was created by listing the directory contents
+* Note the file size is 0 bytes, as no content has yet been entered
 ```
 $ touch ~/.config/helix/languages.toml
+
+$ la -al ~/.config/helix
+total 8
+drwxrwxr-x  2 york-earwaker york-earwaker 4096 Nov 27 10:57 .
+drwx------ 21 york-earwaker york-earwaker 4096 Nov 26 09:23 ..
+-rw-rw-r--  1 york-earwaker york-earwaker    0 Nov 27 10:57 languages.toml
 ```
 * Edit the languages.toml file in nano, or other text editor
 ```
@@ -418,20 +427,46 @@ $ nano ~/.config/helix/languages.toml
 * <todo: consider, confirm from primary source this is correct and link, helix languages.toml rustfmt, clippy entries>
 ```
 [[language]]
-name - "rust"
+name = "rust"
 formatter = { command = "rustfmt" }
 auto-format = true
 
 [language-server.rust-analyzer.config]
 checkOnSave = { command = "clippy" }
 ```
-
-Alternate formatter line
+* Alternate formatter line
 * for use of nightly-only rustfmt options
 ```
 formatter = { command = "rustfmt", args = ["+nightly"] }
 ```
-
+* Chech file contents
+* cat -A prints the contents of the file with all non printing characters made visible. 
+* The $ character at the end of each line marks newline (\nl)
+```
+$ cat -A ~/.config/helix/languages.toml
+[[language]]$
+name = "rust"$
+formatter = { command = "rustfmt" }$
+auto-format = true$
+$
+[language-server.rust-analyzer.config]$
+checkOnSave = { command = "clippy" }$
+$
+```
+* Check the file size
+* Note the file size is now 160 bytes
+```
+$ ls -al ~/.config/helix
+total 12
+drwxrwxr-x  2 york-earwaker york-earwaker 4096 Nov 27 11:16 .
+drwx------ 21 york-earwaker york-earwaker 4096 Nov 26 09:23 ..
+-rw-rw-r--  1 york-earwaker york-earwaker  160 Nov 27 11:16 languages.toml
+```
+* Start helix `hx` or `helix`, or quit and restart, for configuration file changes to take effect.
+* Note any errors in the languages.toml file will be reported by helix as it starts
+```
+$ helix
+```
 
 #### VS Codium
 Status: tbd
