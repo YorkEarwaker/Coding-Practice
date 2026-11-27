@@ -43,6 +43,7 @@ IDE - several available, see rust splash page
 * Zed, terminal, tbd, keep under review, fully foss
 
 ## Output
+Installing rust and tools.
 
 ### Rust install
 Status: Success! :)
@@ -379,7 +380,15 @@ cargo-clippy  clippy-driver  rustc	    rust-gdb	 rustup
 cargo-fmt     rls	     rustdoc	    rust-gdbgui
 ```
 
-### Create a helix languages.toml file
+### Editor integration - rust-analyzer
+Consider also not necesserily all configuration is editor related but rust environment related
+* <todo: consider, integration rust-analyzer with; clippy - check command, rustfmt - formatter, other?, per editor? or once and every editor picks up settings? >
+* project specific toml files, rustfmt.toml formatting, project root
+* clippy.toml - settings for automatic detection by rust-analyzer and cargo, 
+* Cargo.toml and ~/.cargo/config.toml, build 
+* tbd other cargo/rust/rust-analyzer configuration files
+
+#### Helix
 Status: tbd
 * <todo: consider, create global languages.toml file only when necessary, not created automatically, default setting compiled into the hx binary see https://github.com/helix-editor/helix/blob/master/languages.toml >
 * This is only necessary to create bespoke settings to overwrite rust-analyser default settings
@@ -387,13 +396,61 @@ Status: tbd
 * create the languages.toml with 'touch'
 * edit the languages. toml with 'nano'
 
-Not yet attempted
+Create a helix languages.toml file
+* Not yet attempted
 ```
 $ touch ~/.config/helix/languages.toml
 $ nano ~/.config/helix/languages.toml
 ```
 
+Helix languages.toml file content
+* confirm from primary source this is correct and link
+```
+[[language]]
+name - "rust"
+formatter = { command = "rustfmt" }
+auto-format = true
+
+[language-server.rust-analyzer.config]
+checkOnSave = { command = "clippy" }
+```
+#### VS Codium
+Status: tbd
+* settings.json
+
+VS Codium settings.json file content
+* confirm from primary source this is correct and link
+```
+"rust-analyzer.checkOnSave.command": "clippy",
+"editor.formatOnSave": true,
+"[rust]": {
+    "editor.defaultFormatter": "matklad.rust-analyzer"
+}
+```
+
+#### Vim/Neovim - not a first class AGW code editor
+Status: tbd
+* coc.nvim
+* nvin-lspconfig
+
+Vim/Neovim configuration file content
+* confirm from primary source this is correct and link
+```
+let g.rust_analyzer_config = {
+\   "check": {
+\     "command": "clippy"
+\   }
+\ }
+```
+
 ## References
 
-Rust books/references
+Rust - books/references
 * Learn Rust, [WS](https://rust-lang.org/learn/), Rust, official resources for learning Rust language, 
+* Rust By Example, [WS](https://doc.rust-lang.org/rust-by-example/), code snippets, 
+
+Rust - forums, user groups
+* Rust Programming Language Internals Forum, [WS](https://internals.rust-lang.org/),
+
+News Papers - blogs, posts, re rust lang, 
+* Tool configs in Cargo.toml (e.g. rustfmt, clippy) and alternatives brainstorming, [WS](https://internals.rust-lang.org/t/tool-configs-in-cargo-toml-e-g-rustfmt-clippy-and-alternatives-brainstorming/9055), Dec 2018, 
