@@ -42,6 +42,11 @@ IDE - several available, see rust splash page
 * Helix, [GH](https://github.com/helix-editor/helix), [WS](https://helix-editor.com/), docs [WS](https://docs.helix-editor.com/), wiki [GH](https://github.com/helix-editor/helix/wiki), terminal, first class, fully foss, zero config, modern multi modal, written in rust, 
 * Zed, terminal, tbd, keep under review, fully foss
 
+File naming
+* General heuristic: if Rust compiles it then snake_case; if Cargo names it then kebab-case
+* Rust module file names snake_case
+* Cargo crate/package names kebab-case
+
 ## Output
 Installing rust and tools.
 
