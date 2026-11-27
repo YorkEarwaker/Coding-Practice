@@ -1,1 +1,0 @@
-Map<Skip<std::slice::Iter<'_, String>>, {closure@hello_world.rs:44:61: 44:64}>
