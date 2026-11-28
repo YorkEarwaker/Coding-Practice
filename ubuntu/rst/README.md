@@ -217,9 +217,8 @@ cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
 CFLAGS_x86_64-unknown-linux-gnu = None
 ```
 
-Check rustup and cargo dir were created
-* .rustup dir
-* .cargo dir
+Check rustup and cargo directories were created
+* list the contents of the .rustup and .cargo directories
 ```
 $ sudo ls ~/.rustup
 [sudo] password for york-earwaker: 
@@ -302,7 +301,7 @@ installed:          25.07.1                         (120) 21.7MB classic
 ```
 
 Check helix health once rust-analyzer installed
-* see below rust-analyzer install 
+* dependency on rust-analyzer install, for output below
 * hx is the helix binary
 ```
 $ hx --health rust
@@ -386,14 +385,14 @@ cargo-fmt     rls	     rustdoc	    rust-gdbgui
 ```
 
 ### Editor integration - rust-analyzer
-Consider also not necesserily all configuration is editor related but rust environment related
+Consider also not necesserily all configuration is editor related, some is rust environment related
 * <todo: consider, integration rust-analyzer with; clippy - check command, rustfmt - formatter, other?, per editor? or once and every editor picks up settings? >
 * project specific toml files, rustfmt.toml formatting, project root
 * clippy.toml - settings for automatic detection by rust-analyzer and cargo, 
 * Cargo.toml and ~/.cargo/config.toml, build 
 * tbd other cargo/rust/rust-analyzer configuration files
 
-#### Helix
+#### Helix - configuration
 Status: Success! :)
 * <todo: consider, create global languages.toml file only when necessary, not created automatically, default setting compiled into the hx binary see https://github.com/helix-editor/helix/blob/master/languages.toml >
 * This is only necessary to create bespoke settings to overwrite rust-analyser default settings
@@ -473,12 +472,15 @@ drwx------ 21 york-earwaker york-earwaker 4096 Nov 26 09:23 ..
 $ helix
 ```
 
-#### VS Codium
+#### VS Codium - configuration
 Status: tbd
+
+Configuration files
 * settings.json
 
 VS Codium settings.json file content
 * confirm from primary source this is correct and link
+* Not yet attempted
 ```
 "rust-analyzer.checkOnSave.command": "clippy",
 "editor.formatOnSave": true,
@@ -487,13 +489,18 @@ VS Codium settings.json file content
 }
 ```
 
-#### Vim/Neovim - not a first class AGW code editor
+#### Vim/Neovim - configuration
 Status: tbd
+* not a first class AGW code editor
+
+Configuraton files 
 * coc.nvim
 * nvin-lspconfig
+* other? ...
 
 Vim/Neovim configuration file content
 * confirm from primary source this is correct and link
+* Not yet attempted
 ```
 let g.rust_analyzer_config = {
 \   "check": {
